@@ -7,25 +7,25 @@
   <body class="page__body">
     <div class="container">
       <header class="general-header">
-        <a class="general-header__logo" href="">
+        <a class="general-header__logo" href="index.html">
           <img class="general-header__logo-image" src="../source/img/index_img/content/logo-header.svg" width="185" height="96" alt="Logo city of Sedona.">
         </a>
-        <nav class="general-nav">
-          <button class="general-nav__toggle" type="button">
+        <nav class="general-header__nav navigation">
+          <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="general-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="index.html">Главная</a>
+          <ul class="navigation__list site-list">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Фото и видео</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма Отзыва</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Форма Отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -87,7 +87,7 @@
         <section class="interested">
           <h2 class="interested__title">Заинтересовались?</h2>
           <p class="interested__content">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="serach-button button" type="button">Найти Гостиницу</button>
+          <button class="button button--colored" type="button">Найти Гостиницу</button>
         </section>
         <div class="location">
           <img class="location__image" src="../source/img/index_img/content/map-mobile.jpg" width="" height="" alt="Map with location of Sedona.">
@@ -97,8 +97,9 @@
         <div class="general-footer__tag">
           <p class="tag">#visitSEDONA</p>
         </div>
-        <div class="general-footer__list social">
-          <ul class="social-list">
+        <div class="general-footer__list-wrapper social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="#">Мы в Вконтакте</a>
             </li>

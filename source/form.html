@@ -7,25 +7,25 @@
   <body class="page__body">
     <div class="container">
       <header class="general-header">
-        <a class="general-header__logo" href="">
+        <a class="general-header__logo" href="index.html">
           <img class="general-header__logo-image" src="../source/img/index_img/content/logo-header.svg" width="185" height="96" alt="Logo city of Sedona.">
         </a>
-        <nav class="general-nav">
-          <button class="general-nav__toggle" type="button">
+        <nav class="general-header__nav navigation">
+          <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="general-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="index.html">Главная</a>
+          <ul class="navigation__list site-list">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Фото и видео</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма Отзыва</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Форма Отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -88,15 +88,16 @@
             <textarea class="emotions-form__input" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5" cols="25"></textarea>
           </form>
         </fieldset>
-        <button class="submit-review button" type="button">Отправить отзыв</button>
+        <button class="button button--colored" type="submit">Отправить отзыв</button>
         <span class="foms-comment">* — обязательные поля</span>
       </main>
       <footer class="general-footer">
         <div class="general-footer__tag">
           <p class="tag">#visitSEDONA</p>
         </div>
-        <div class="general-footer__list social">
-          <ul class="social-list">
+        <div class="general-footer__list-wrapper social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="#">Мы в Вконтакте</a>
             </li>
@@ -115,6 +116,20 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal-error">
+          <h2 class="modal-error__tittle">Что-то пошло не так!</h2>
+          <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="button button--colored" type="button">Ок</button>
+        </div>
+      </div>
+      <div class="modal-container">
+        <div class="modal-submitted">
+          <h2 class="modal-error__tittle">Ваш отзыв отправлен!</h2>
+          <p class="modal-error__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="button button--colored" type="button">Закрыть окно</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
