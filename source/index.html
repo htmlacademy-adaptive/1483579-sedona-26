@@ -7,13 +7,13 @@
   <body class="page__body">
     <div class="container">
       <header class="general-header">
+        <button class="general-header__toggle toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <a class="general-header__logo" href="index.html">
-          <img class="general-header__logo-image" src="../source/img/index_img/content/logo-header.svg" width="185" height="96" alt="Logo city of Sedona.">
+          <img class="general-header__logo-image" src="../source/img/index_img/content/logo-header.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
         <nav class="general-header__nav navigation">
-          <button class="navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="navigation__list site-list">
             <li class="navigation__item navigation__item--current">
               <a class="navigation__link" href="index.html">Главная</a>
@@ -42,9 +42,9 @@
             <li class="advantages__item advantages__item--colored-dark">
               <div class="advantage-wrapper">
                 <h3 class="advantages__title">Настоящий городок</h3>
-                <span class="advantages__number">— №1 —</span>
+                <!-- Сделать псевдо "— №1 —" -->
                 <p class="advantages__content">Седона не аттракцион для туристов, там течет своя жизнь</p>
-                <img class="advantages__image" src="../source/img/index_img/content/advantage-real-town.jpg" width="" height="" alt="Real town Sedona.">
+                <img class="advantages__image" src="../source/img/index_img/content/advantage-real-town.jpg" width="" height="" alt="Живой город Седона.">
               </div>
               <ul class="advantages__description-list description-list">
                 <li class="description-list__item">
@@ -63,23 +63,23 @@
             </li>
             <li class="advantages__item advantages__item--colored-dark">
               <h3 class="advantages__title">Там есть мост дьявола</h3>
-              <span class="advantages__number">— №2 —</span>
+              <!-- Сделать псевдо "— №2 —" -->
               <p class="advantages__content">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              <img class="advantages__image" src="../source/img/index_img/content/advantage-bridge.jpg" width="" height="" alt="Devil bridge in Sedona.">
+              <img class="advantages__image" src="../source/img/index_img/content/advantage-bridge.jpg" width="" height="" alt="Мост дьявола в Седоне.">
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Небольшая площадь</h3>
-              <span class="advantages__number">— №3 —</span>
+              <!-- Сделать псевдо "— №3 —" -->
               <p class="advantages__content">Все интересные места находятся очень близко</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Красивая дорога</h3>
-              <span class="advantages__number">— №4 —</span>
+              <!-- Сделать псевдо "— №4 —" -->
               <p class="advantages__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Мало туристов</h3>
-              <span class="advantages__number">— №5 —</span>
+              <!-- Сделать псевдо "— №5 —" -->
               <p class="advantages__content">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ol>
@@ -90,13 +90,13 @@
           <button class="button button--colored" type="button">Найти Гостиницу</button>
         </section>
         <div class="location">
-          <img class="location__image" src="../source/img/index_img/content/map-mobile.jpg" width="" height="" alt="Map with location of Sedona.">
+          <img class="location__image" src="../source/img/index_img/content/map-mobile.jpg" width="" height="" alt="Карта с уканазием расположения Седоны.">
         </div>
       </main>
       <footer class="general-footer">
-        <div class="general-footer__tag">
-          <p class="tag">#visitSEDONA</p>
-        </div>
+        <a class="general-footer__tag" href="#">
+          <span class="tag">#visitSEDONA</span>
+        </a>
         <div class="general-footer__list-wrapper social">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social__list">
@@ -114,7 +114,7 @@
         <div class="general-footer__copyright copyright">
           <a class="copyright__link" href="">
             <span class="copyright__text">Разработано</span>
-            <img class="copyright__logo" src="../source/img/index_img/content/htmlacademy-logo-footer.svg" width="" height="" alt="HTML Academy logo.">
+            <img class="copyright__logo" src="../source/img/index_img/content/htmlacademy-logo-footer.svg" width="" height="" alt="Логотип HTML Academy.">
           </a>
         </div>
       </footer>
