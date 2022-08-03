@@ -36,40 +36,33 @@
           <h2 class="form-header__tittle">Оставьте свой отзыв</h2>
           <p class="form-header__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
-        <fieldset class="review">
-          <legend class="review__tittle">Представьтесь:</legend>
-          <form class="review__form name-form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="review__form name-form" action="https://echo.htmlacademy.ru/" method="get"></form>
+          <fieldset class="review">
+            <legend class="review__tittle">Представьтесь:</legend>
             <label class="name-form__label" for="name">Имя*:</label>
             <input class="name-form__input" type="text" id="name" placeholder="Пётр" name="name" required>
             <label class="name-form__label" for="surname">Фамилия*:</label>
             <input class="name-form__input" type="text" id="surname" placeholder="Пустота" name="surname" required>
             <label class="name-form__label" for="patronymic">Отчество*:</label>
             <input class="name-form__input" type="text" id="patronymic" placeholder="Викторович" name="patronymic">
-          </form>
-        </fieldset>
-        <fieldset class="review">
-          <legend class="review__tittle">Контактная информация:</legend>
-          <form class="review__form contact-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="contact-form__label" for="phone">Контактный телефон*:</label>
-            <input class="contact-form__input contact-form__input--icon-phone" type="text" id="phone" placeholder="Введите телефон" name="phone" required>
-            <label class="contact-form__label" for="e-mail">Электронная почта*:</label>
-            <input class="contact-form__input contact-form__input--icon-email" type="text" id="e-mail" placeholder="Введите e-mail" name="e-mail" required>
-          </form>
-        </fieldset>
-        <fieldset class="review">
-          <legend class="review__tittle">Ваше общее впечатление:</legend>
-          <form class="review__form impressions-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="impressions-form__input" type="radio" id="good" name="impressions" checked>
-            <label class="impressions-form__label" for="good">Скорее положительное</label>
-            <input class="impressions-form__input" type="radio" id="bad" name="impressions">
-            <label class="impressions-form__label" for="bad">Скорее отрицательное</label>
-            <input class="impressions-form__input" type="radio" id="middle" name="impressions">
-            <label class="impressions-form__label" for="middle">Затрудняюсь ответить</label>
-          </form>
-        </fieldset>
-        <fieldset class="review">
-          <legend class="review__tittle">Посещенные достопримечательности:</legend>
-          <form class="review__form attractions-form" action="https://echo.htmlacademy.ru/" method="get">
+          </fieldset>
+          <fieldset class="review">
+            <legend class="review__tittle">Контактная информация:</legend>
+              <label class="contact-form__label" for="phone">Контактный телефон*:</label>
+              <input class="contact-form__input contact-form__input--icon-phone" type="text" id="phone" placeholder="Введите телефон" name="phone" required>
+              <label class="contact-form__label" for="e-mail">Электронная почта*:</label>
+              <input class="contact-form__input contact-form__input--icon-email" type="text" id="e-mail" placeholder="Введите e-mail" name="e-mail" required>          </fieldset>
+          <fieldset class="review">
+            <legend class="review__tittle">Ваше общее впечатление:</legend>
+              <input class="impressions-form__input" type="radio" id="good" name="impressions" checked>
+              <label class="impressions-form__label" for="good">Скорее положительное</label>
+              <input class="impressions-form__input" type="radio" id="bad" name="impressions">
+              <label class="impressions-form__label" for="bad">Скорее отрицательное</label>
+              <input class="impressions-form__input" type="radio" id="middle" name="impressions">
+              <label class="impressions-form__label" for="middle">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset class="review">
+            <legend class="review__tittle">Посещенные достопримечательности:</legend>
             <input class="attractions-form__input" type="checkbox" id="bridge" name="bridge" checked>
             <label class="attractions-form__label" for="bridge">Мост Дьявола</label>
             <input class="attractions-form__input" type="checkbox" id="mountain" name="mountain" checked>
@@ -78,16 +71,14 @@
             <label class="attractions-form__label" for="park">Слайд-парк</label>
             <input class="attractions-form__input" type="checkbox" id="rocks" name="rocks">
             <label class="attractions-form__label" for="rocks">Красные скалы</label>
-          </form>
-        </fieldset>
-        <fieldset class="review">
-          <legend class="review__tittle">Опишите свои эмоции:</legend>
-          <form class="review__form emotions-form" action="https://echo.htmlacademy.ru/" method="get">
-            <textarea class="emotions-form__input" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5" cols="25"></textarea>
-          </form>
-        </fieldset>
-        <button class="button button--colored" type="submit">Отправить отзыв</button>
-        <span class="foms-comment">* — обязательные поля</span>
+          </fieldset>
+          <fieldset class="review">
+            <legend class="review__tittle">Опишите свои эмоции:</legend>
+              <textarea class="emotions-form__input" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5" cols="25"></textarea>
+          </fieldset>
+          <button class="button button--colored" type="submit">Отправить отзыв</button>
+          <span class="foms-comment">* — обязательные поля</span>
+        </form>
       </main>
       <footer class="general-footer">
         <a class="general-footer__tag" href="#">
