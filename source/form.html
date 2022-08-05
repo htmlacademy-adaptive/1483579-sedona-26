@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="container">
@@ -30,14 +31,15 @@
           </ul>
         </nav>
       </header>
-      <main class="fom-main">
+      <main class="form-main">
         <h1 class="visually-hidden">Форма отзыва</h1>
         <section class="hero"> <!--"form-header" Можно ли сделать hero БЭМ-блок с его элементами или нужно всё называть по-совему?-->
           <h2 class="hero__title">Оставьте свой отзыв</h2>
           <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
-        <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
-            <legend class="review__title">Представьтесь:</legend>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="form__container">
+            <legend class="form__title">Представьтесь:</legend>
             <label class="form__label" for="name">Имя*:</label>
             <input class="form__input" type="text" id="name" placeholder="Пётр" name="name" required>
             <label class="form__label" for="surname">Фамилия*:</label>
@@ -45,23 +47,23 @@
             <label class="form__label" for="patronymic">Отчество*:</label>
             <input class="form__input" type="text" id="patronymic" placeholder="Викторович" name="patronymic">
           </fieldset>
-          <fieldset class="review">
-            <legend class="review__title">Контактная информация:</legend>
-              <label class="form__label" for="phone">Контактный телефон*:</label>
-              <input class="form__input contact-form__input--icon-phone" type="text" id="phone" placeholder="Введите телефон" name="phone" required>
-              <label class="form__label" for="e-mail">Электронная почта*:</label>
-              <input class="form__input contact-form__input--icon-email" type="text" id="e-mail" placeholder="Введите e-mail" name="e-mail" required>          </fieldset>
-          <fieldset class="review">
-            <legend class="review__title">Ваше общее впечатление:</legend>
-              <input class="form__input--radio" type="radio" id="good" name="impressions" checked>
-              <label class="form__label--radio" for="good">Скорее положительное</label>
-              <input class="form__input--radio" type="radio" id="bad" name="impressions">
-              <label class="form__label--radio" for="bad">Скорее отрицательное</label>
-              <input class="form__input--radio" type="radio" id="middle" name="impressions">
-              <label class="form__label--radio" for="middle">Затрудняюсь ответить</label>
+          <fieldset class="form__container">
+            <legend class="form__title">Контактная информация:</legend>
+            <label class="form__label" for="phone">Контактный телефон*:</label>
+            <input class="form__input form__input--icon-phone" type="text" id="phone" placeholder="Введите телефон" name="phone" required>
+            <label class="form__label" for="e-mail">Электронная почта*:</label>
+            <input class="form__input form__input--icon-email" type="text" id="e-mail" placeholder="Введите e-mail" name="e-mail" required>          </fieldset>
+          <fieldset class="form__container">
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <input class="form__input--radio" type="radio" id="good" name="impressions" checked>
+            <label class="form__label--radio" for="good">Скорее положительное</label>
+            <input class="form__input--radio" type="radio" id="bad" name="impressions">
+            <label class="form__label--radio" for="bad">Скорее отрицательное</label>
+            <input class="form__input--radio" type="radio" id="middle" name="impressions">
+            <label class="form__label--radio" for="middle">Затрудняюсь ответить</label>
           </fieldset>
-          <fieldset class="review">
-            <legend class="review__title">Посещенные достопримечательности:</legend>
+          <fieldset class="form__container">
+            <legend class="form__title">Посещенные достопримечательности:</legend>
             <input class="form__input--checkbox" type="checkbox" id="bridge" name="bridge" checked>
             <label class="form__label--checkbox" for="bridge">Мост Дьявола</label>
             <input class="form__input--checkbox" type="checkbox" id="mountain" name="mountain" checked>
@@ -71,12 +73,12 @@
             <input class="form__input--checkbox" type="checkbox" id="rocks" name="rocks">
             <label class="form__label--checkbox" for="rocks">Красные скалы</label>
           </fieldset>
-          <fieldset class="review">
-            <legend class="review__title">Опишите свои эмоции:</legend>
-              <textarea class="form__input" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5" cols="25"></textarea>
+          <fieldset class="form__container">
+            <legend class="form__title">Опишите свои эмоции:</legend>
+            <textarea  tarea class="form__input" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5" cols="25"></textarea>
           </fieldset>
           <button class="button button--colored" type="submit">Отправить отзыв</button>
-          <span class="foms-comment">* — обязательные поля</span>
+          <span class="for__comment">* — обязательные поля</span>
         </form>
       </main>
       <footer class="general-footer">

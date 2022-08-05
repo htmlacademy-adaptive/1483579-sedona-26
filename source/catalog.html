@@ -2,7 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Галерея/title>
+    <title>Галерея</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="container">
@@ -97,14 +98,16 @@
           </figure>
         </div>
         <div class="video-card">
-          <section class="video hero"> <!--Можно ли добавить hero БЭМ-блок с его элементами или нужно всё называть по-совему?-->
+          <section class="hero">
             <h2 class="hero__title">Все еще сомневаетесь?</h2>
             <p class="hero__caption">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </section>
+          <div class="video">
             <video class="video__image" poster="../source/img/index_img/content/video-preview.jpg" width="" height="" alt="Video preview image.">
             <button class="video__toggle" type="button">
               <span class="visually-hidden">Запуск</span>
             </button>
-          </section>
+          </div>
         </div>
       </main>
       <footer class="general-footer">
