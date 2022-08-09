@@ -1,0 +1,56 @@
+.main__welcome-block {
+  background-image: url(../../img/decorative/welcome-background-mountains/back-mobile.jpg);
+  background-color: $background-color-secondary;
+  width: 320px;
+  height: 390px;
+  background-repeat: no-repeat;
+  padding: 90px 19px 85px;
+  box-sizing: border-box;
+
+  &--small {
+    height: 158px;
+    background-position: bottom;
+  }
+}
+
+.main__welcome-block::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg);
+  width: 320px;
+  height: 58px;
+  background-repeat: no-repeat;
+  top: 389px;
+  left: 0;
+  background-color: #FFFFFF00;
+}
+
+.main__welcome-block--small::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/decorative/SEDONA.svg);
+  width: 320px;
+  height: 58px;
+  background-repeat: no-repeat;
+  top: 108px;
+  left: 46px;
+  background-color: #FFFFFF00;
+}
+
+.main__welcome-block--small::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg);
+  width: 320px;
+  height: 58px;
+  background-repeat: no-repeat;
+  top: 174px;
+  left: 0;
+  background-color: #FFFFFF00;
+}
+
+.main__button {
+  display: block;
+  margin:0 auto;
+  margin-bottom: 48px;
+}

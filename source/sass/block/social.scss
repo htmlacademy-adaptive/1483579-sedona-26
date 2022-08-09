@@ -1,0 +1,13 @@
+.social__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  background-color: $background-color-secondary
+}

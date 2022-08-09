@@ -1,36 +1,25 @@
-/*<button class="general-header__toggle toggle" type="button">
-    <span class="visually-hidden">Открыть меню</span>
-  </button>
-  <a class="general-header__logo" href="index.html">
-    <img class="general-header__logo-image" src="../source/img/index_img/content/logo-header.svg" width="185" height="96" alt="Логотип Седона.">
-  </a>
-  <nav class="general-header__nav navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item navigation__item--current">
-        <a class="navigation__link" href="index.html">Главная</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="catalog.html">Фото и видео</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="form.html">Форма Отзыва</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>*/
-
 .general-header {
-
+  position: relative;
+  min-height: 56px;
 }
 
 .toggle {
-  background-image: url(/source/img/index_img/decorative/icon-menu.svg);
+  background-image: url(../); //не удаётся подключить изображение
+  width: 24px;
+  height: 22px;
   background-position: no-repeat;
-  background-color: #FFFFFF;
+  background-color: $background-color-primary;
 }
 
 .general-header__logo-image {
-  background-color: #81B3D3;
+  position: absolute;
+  top: 0;
+  left: 67px;
+}
+
+.general-header__nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: none;
 }

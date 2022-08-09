@@ -1,0 +1,15 @@
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  color: $text-color-lighten;
+}
+
+.button--colored {
+  background-color: $background-color-secondary;
+  padding: 16px 49px;
+  width: 284px;
+  box-sizing: border-box;
+}
