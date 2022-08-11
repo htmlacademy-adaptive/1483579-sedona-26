@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   padding: 90px 19px 85px;
   box-sizing: border-box;
+  position: relative;
 
   &--small {
     height: 158px;
@@ -25,7 +26,8 @@
   width: 320px;
   height: 58px;
   background-repeat: no-repeat;
-  top: 390px;
+  background-position: bottom;
+  top: 332px;
   left: 0;
   background-color: #FFFFFF00;
 }
@@ -37,7 +39,7 @@
   width: 320px;
   height: 58px;
   background-repeat: no-repeat;
-  top: 108px;
+  top: 68px;
   left: 46px;
   background-color: #FFFFFF00;
 }
@@ -49,7 +51,8 @@
   width: 320px;
   height: 58px;
   background-repeat: no-repeat;
-  top: 174px;
+  background-position: bottom;
+  top: 118px;
   left: 0;
   background-color: #FFFFFF00;
 }
