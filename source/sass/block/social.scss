@@ -11,3 +11,17 @@
   height: 48px;
   background-color: $background-color-secondary
 }
+
+.social__link {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.icon-wrapper {
+  padding: 11px;
+}
+
+.social__icon {
+  fill: $text-color-lighten;
+}

@@ -22,7 +22,7 @@
 }
 
 .content--colored:not(:last-child) {
-  background-color: $inputs-background-color;
+  background-color: $items-background-color;
   padding: 24px 19px 0px;
 }
 
@@ -32,6 +32,6 @@
 }
 
 .content--colored:last-child {
-  background-color: $inputs-background-color;
+  background-color: $items-background-color;
   padding: 24px 19px 24px;
 }
