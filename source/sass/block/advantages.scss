@@ -11,10 +11,10 @@
   margin: 0;
 }
 
-.advantages__item:first-child:before {
+.advantages__item:first-child::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/decorative/decorative-elements-welcome/intro-triangle-top.svg);
+  background-image: url("../../img/decorative/decorative-elements-welcome/intro-triangle-top.svg");
   width: 320px;
   height: 58px;
   background-repeat: no-repeat;

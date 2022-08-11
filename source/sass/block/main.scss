@@ -1,5 +1,5 @@
 .main__welcome-block {
-  background-image: url(../../img/decorative/welcome-background-mountains/back-mobile.jpg);
+  background-image: url("../../img/decorative/welcome-background-mountains/back-mobile.jpg");
   background-color: $background-color-secondary;
   width: 320px;
   height: 390px;
@@ -22,43 +22,43 @@
 .main__welcome-block::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg);
+  background-image: url("../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg");
   width: 320px;
   height: 58px;
   background-repeat: no-repeat;
   background-position: bottom;
   top: 332px;
   left: 0;
-  background-color: #FFFFFF00;
+  background-color: #ffffff00;
 }
 
 .main__welcome-block--small::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/decorative/SEDONA.svg);
+  background-image: url("../../img/decorative/SEDONA.svg");
   width: 320px;
   height: 58px;
   background-repeat: no-repeat;
   top: 68px;
   left: 46px;
-  background-color: #FFFFFF00;
+  background-color: #ffffff00;
 }
 
 .main__welcome-block--small::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg);
+  background-image: url("../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg");
   width: 320px;
   height: 58px;
   background-repeat: no-repeat;
   background-position: bottom;
   top: 118px;
   left: 0;
-  background-color: #FFFFFF00;
+  background-color: #ffffff00;
 }
 
 .main__button {
   display: block;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
