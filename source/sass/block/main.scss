@@ -1,9 +1,9 @@
 .main__welcome-block {
-  background-image: url("../../img/decorative/welcome-background-mountains/back-mobile.jpg");
+  background-image: url("../../img/decorative/back-desktop.jpg");
   background-color: $background-color-secondary;
-  width: 320px;
   height: 390px;
   background-repeat: no-repeat;
+  background-position: center;
   padding: 90px 19px 85px;
   box-sizing: border-box;
   position: relative;
@@ -11,6 +11,10 @@
   &--small {
     height: 158px;
     background-position: bottom;
+
+    @include tablet {
+      height: 214px;
+    }
   }
 }
 
@@ -22,8 +26,8 @@
 .main__welcome-block::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg");
-  width: 320px;
+  background-image: url("../../img/decorative/decorative-elements-welcome/welcome-bottom-big-.svg");
+  width: 100%;
   height: 58px;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -47,14 +51,18 @@
 .main__welcome-block--small::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/decorative/decorative-elements-welcome/intro-triangle-bottom.svg");
-  width: 320px;
+  background-image: url("../../img/decorative/decorative-elements-welcome/welcome-bottom-big-.svg");
+  width: 100%;
   height: 58px;
   background-repeat: no-repeat;
   background-position: bottom;
   top: 118px;
   left: 0;
   background-color: #ffffff00;
+
+  @include tablet {
+    top: 156px;
+  }
 }
 
 .main__button {

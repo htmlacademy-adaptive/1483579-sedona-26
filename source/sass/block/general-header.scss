@@ -12,6 +12,13 @@
   background-repeat: no-repeat;
   background-color: $background-color-primary;
   border: none;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 .general-header__toggle {
@@ -23,6 +30,10 @@
   top: 0;
   left: 67px;
   z-index: 1;
+
+  @include tablet {
+    left: 40%;
+  }
 }
 
 .general-header__nav {
@@ -31,3 +42,4 @@
   top: 0;
   z-index: 2;
 }
+

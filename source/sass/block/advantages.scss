@@ -21,6 +21,10 @@
   background-color: $icons-background-color;
   top: -11px;
   left: 0;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .advantages__item--colored-dark {

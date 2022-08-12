@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <div class="container">
       <header class="general-header">
-        <button class="general-header__toggle toggle" type="button">
+        <button class="general-header__toggle toggle" type="button" onclick="document.querySelector('.navigation__list--opened').classList.remove('navigation__list--closed')">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="general-header__logo" href="index.html">
           <img class="general-header__logo-image" src="img/content/logo-header.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
         <nav class="general-header__nav navigation">
-          <ul class="navigation__list navigation__list--opened">
+          <ul class="navigation__list navigation__list--opened navigation__list--closed">
             <li class="navigation__item navigation__item--current">
               <a class="navigation__link" href="index.html">Главная</a>
             </li>
