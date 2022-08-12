@@ -1,0 +1,32 @@
+.button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  color: $text-color-lighten;
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+.button--colored {
+  background-color: $background-color-secondary;
+  width: 282px;
+  height: 58px;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+}
+
+.button--modal-error {
+  width: 180px;
+  height: 58px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button--modal-submitted,
+.button--modal-error {
+  font-size: 18px;
+}

@@ -1,0 +1,114 @@
+.form-wrapper {
+  padding: 24px 20px 39px;
+  margin: 0;
+}
+
+.form__container {
+  border: none;
+  position: relative;
+  margin-top: 24px;
+}
+
+.form__container::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: $lines-background-color;
+  width: 100%;
+  top: -54px;
+  left: 0;
+}
+
+.form__title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.form__label {
+  display: block;
+  margin-left: 16px;
+}
+
+.form__input {
+  width: 280px;
+  height: 58px;
+  background-color: $inputs-background-color;
+  border: none;
+
+  @include form-text;
+}
+
+.form__input--contacts {
+  color: $opacity-primary-color;
+}
+
+.form__input:not(:last-child),
+.form__label-controls:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form__input-controls {
+  position: relative;
+  margin: 0;
+  margin-right: 16px;
+  width: 44px;
+  height: 44px;
+}
+
+.form__label-controls {
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  border: none;
+
+  @include form-text;
+}
+
+.form__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $inputs-background-color;
+  border-radius: 50%;
+}
+
+.form__input-controls[type="radio"]:checked + .form__control-mark::before {
+  content: "";
+  background-color: $text-color-primary;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  top: 14px;
+  right: 14px;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  text-transform: inherit;
+}
+
+.form__comment {
+  display: block;
+  font-size: 12px;
+  line-height: 21px;
+  color: $opacity-primary-color;
+  text-align: end;
+  margin-right: 20px;
+}
+
+.form__control-mark--checkbox {
+  border-radius: 4px;
+}
+
+.form__input--textarea {
+  width: 280px;
+  height: 150px;
+  font-family: inherit;
+}

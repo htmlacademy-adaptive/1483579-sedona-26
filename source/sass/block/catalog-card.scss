@@ -1,0 +1,14 @@
+.catalog-card {
+  padding: 24px 20px;
+  position: relative;
+}
+
+.catalog-card::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: $lines-background-color;
+  width: 100%;
+  top: 0;
+  left: 0;
+}

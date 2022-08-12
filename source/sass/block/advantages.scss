@@ -1,0 +1,28 @@
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.advantages__description-list {
+  list-style-type: none;
+  padding: 23px 18px 52px;
+  margin: 0;
+}
+
+.advantages__item:first-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/decorative/decorative-elements-welcome/intro-triangle-top.svg");
+  width: 320px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-color: $icons-background-color;
+  top: -11px;
+  left: 0;
+}
+
+.advantages__item--colored-dark {
+  background-color: $background-color-secondary;
+}
