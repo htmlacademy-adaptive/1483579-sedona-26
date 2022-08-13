@@ -19,12 +19,11 @@
 .content--whith-photo {
   color: $background-color-primary;
   padding: 45px 16px 38px;
-}
 
-/*.content--whith-photo:first-of-type {
-  color: $background-color-primary;
-  padding: 57px 18px 40px;
-}*/
+  @include tablet {
+    width: 30%;
+  }
+}
 
 .content--colored:not(:last-child) {
   background-color: $items-background-color;

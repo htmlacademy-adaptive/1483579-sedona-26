@@ -3,14 +3,31 @@
   padding: 0;
   margin: 0;
   position: relative;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 
 .advantages__description-list {
   list-style-type: none;
   padding: 23px 18px 52px;
   margin: 0;
+
+  @include tablet{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
+.advantages__image {
+  @include tablet {
+    width: 65.8%;
+  }
+}
 .advantages__item:first-child::before {
   content: "";
   position: absolute;
@@ -29,4 +46,15 @@
 
 .advantages__item--colored-dark {
   background-color: $background-color-secondary;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item--reverse {
+  @include tablet {
+    flex-direction: row-reverse;
+  }
 }
