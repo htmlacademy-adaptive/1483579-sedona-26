@@ -12,8 +12,7 @@
 
 .button--colored {
   background-color: $background-color-secondary;
-  width: 282px;
-  height: 58px;
+  max-width: 282px;
   box-sizing: border-box;
   border: none;
   text-align: center;
@@ -22,11 +21,15 @@
 .button--modal-error {
   width: 180px;
   height: 58px;
-  display: block;
-  margin: 0 auto;
 }
 
 .button--modal-submitted,
 .button--modal-error {
   font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button--modal-submitted {
+  min-width: 282px;
 }

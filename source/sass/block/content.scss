@@ -9,6 +9,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @include tablet {
+    margin-bottom: 65px;
+  }
 }
 
 .content__text {
@@ -21,7 +25,9 @@
   padding: 45px 16px 38px;
 
   @include tablet {
-    width: 30%;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 40px 32px 43px;
   }
 }
 

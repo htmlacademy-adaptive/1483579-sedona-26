@@ -24,8 +24,9 @@
 }
 
 .advantages__image {
+  display: block;
   @include tablet {
-    width: 65.8%;
+    width: 67%;
   }
 }
 .advantages__item:first-child::before {
@@ -38,6 +39,10 @@
   background-color: $icons-background-color;
   top: -11px;
   left: 0;
+
+  @media screen and (min-width: 321px){
+    display: none;
+  }
 
   @include tablet {
     display: none;

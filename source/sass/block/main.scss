@@ -30,9 +30,15 @@
   height: 58px;
   background-repeat: no-repeat;
   background-position: bottom;
-  top: 332px;
+  top: 333px;
   left: 0;
   background-color: #ffffff00;
+}
+
+.main__button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .main__welcome-block--small::before {
@@ -64,8 +70,3 @@
   }
 }
 
-.main__button {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 48px;
-}
