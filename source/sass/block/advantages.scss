@@ -5,11 +5,33 @@
   position: relative;
 
   @include tablet {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+    "row-1 row-1 row-1"
+    "row-2 row-2 row-2"
+    "col-3 col-4 col-5";
   }
 }
 
+.row-1 {
+  grid-area: row-1;
+}
+
+.row-2 {
+  grid-area: row-2;
+}
+
+.col-3 {
+  grid-area: col-3;
+}
+
+.col-4 {
+  grid-area: col-4;
+}
+
+.col-5 {
+  grid-area: col-5;
+}
 
 .advantages__description-list {
   list-style-type: none;

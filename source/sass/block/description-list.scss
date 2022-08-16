@@ -15,9 +15,11 @@
 .description-list__title {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 700;
 
   @include tablet {
     text-align: center;
+    font-size: 21px;
   }
 }
 

@@ -12,6 +12,7 @@
 
   @include tablet {
     margin-bottom: 65px;
+    font-size: 21px;
   }
 }
 
@@ -34,14 +35,26 @@
 .content--colored:not(:last-child) {
   background-color: $items-background-color;
   padding: 24px 19px 0;
+
+  @include tablet {
+    padding: 40px 34px 63px;
+  }
 }
 
 .content__text--underlined {
   border-bottom: 1px solid #d6d6d6;
   padding-bottom: 24px;
+
+  @include tablet {
+    border-bottom: none;
+  }
 }
 
 .content--colored:last-child {
   background-color: $items-background-color;
   padding: 24px 19px 24px;
+
+  @include tablet {
+    padding: 40px 34px 63px;
+  }
 }

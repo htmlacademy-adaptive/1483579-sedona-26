@@ -27,11 +27,20 @@
 
 .hero--intersted {
   padding: 38px 18px 32px;
+
+  @include tablet {
+    padding: 60px 166px 40px;
+  }
 }
 
 .hero__title--intersted {
   font-size: 21px;
   margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero--modal-error {

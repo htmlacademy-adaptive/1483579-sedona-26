@@ -39,6 +39,10 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 48px;
+
+  @include tablet {
+    margin-bottom: 58px;
+  }
 }
 
 .main__welcome-block--small::before {

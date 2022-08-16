@@ -1,5 +1,12 @@
 .general-footer {
   padding: 28px 82px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 60px;
+  }
 }
 
 .general-footer__tag {

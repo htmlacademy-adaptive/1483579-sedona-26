@@ -16,6 +16,10 @@
   box-sizing: border-box;
   border: none;
   text-align: center;
+
+  @include tablet {
+    min-width: 458px;
+  }
 }
 
 .button--modal-error {
