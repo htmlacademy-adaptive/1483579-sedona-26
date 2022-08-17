@@ -1,0 +1,33 @@
+.general-header {
+  position: relative;
+  min-height: 56px;
+  display: flex;
+  justify-content: end;
+}
+
+.toggle {
+  background-image: url("../../img/content/icon-menu.svg"); //не удаётся подключить изображение
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-color: $background-color-primary;
+  border: none;
+}
+
+.general-header__toggle {
+  margin: 16px;
+}
+
+.general-header__logo-image {
+  position: absolute;
+  top: 0;
+  left: 67px;
+  z-index: 1;
+}
+
+.general-header__nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}

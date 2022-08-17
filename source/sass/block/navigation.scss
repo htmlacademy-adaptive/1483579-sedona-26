@@ -1,0 +1,30 @@
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 55px;
+  text-align: center;
+  padding: 14px 0;
+  background-color: $background-color-secondary;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.navigation__link {
+  text-decoration: none;
+  vertical-align: center;
+  color: $background-color-primary;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.navigation__list--opened {
+  display: block;
+}
