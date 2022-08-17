@@ -51,3 +51,16 @@
 .hero--modal-submitted {
   padding: 38px;
 }
+
+.hero--form {
+  @include tablet {
+    padding: 64px 166px 102px;
+  }
+}
+
+.hero__title--big {
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}

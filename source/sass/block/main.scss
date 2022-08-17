@@ -1,3 +1,7 @@
+.main {
+  flex-grow: 1;
+}
+
 .main__welcome-block {
   background-image: url("../../img/decorative/back-desktop.jpg");
   background-color: $background-color-secondary;
@@ -13,7 +17,7 @@
     background-position: bottom;
 
     @include tablet {
-      height: 214px;
+      height: 290px;
     }
   }
 }
@@ -70,7 +74,7 @@
   background-color: #ffffff00;
 
   @include tablet {
-    top: 156px;
+    top: 232px;
   }
 }
 

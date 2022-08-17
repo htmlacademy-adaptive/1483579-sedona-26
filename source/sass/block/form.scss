@@ -1,5 +1,9 @@
 .form {
   border-top: 1px $lines-background-color solid;
+
+  @include tablet {
+    border-top: none;
+  }
 }
 
 .form-wrapper {
@@ -11,6 +15,11 @@
   border: none;
   position: relative;
   border-bottom: 1px $lines-background-color solid;
+
+  @include tablet {
+    padding: 0 60px;
+    border-bottom: none;
+  }
 }
 
 .form__container:last-of-type {
@@ -24,6 +33,10 @@
   line-height: 26px;
   text-align: center;
   padding-top: 24px;
+
+  @include tablet {
+    padding-top: 0;
+  }
 }
 
 .form__label {

@@ -6,20 +6,6 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $text-color-secondary;
-  height: 100%;
-  max-width: 320px;
+
   margin: 0;
-  background-color: $background-color-primary;
-  max-width: 100vh;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  @include tablet {
-    max-width: 768px;
-  }
-
-  @include desktop {
-    max-width: 1200px;
-  }
 }
