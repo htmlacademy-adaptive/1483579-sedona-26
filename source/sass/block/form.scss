@@ -3,12 +3,18 @@
 
   @include tablet {
     border-top: none;
+    padding: 0 60px;
   }
 }
 
 .form-wrapper {
   padding: 24px 20px 39px;
   margin: 0;
+
+  @include tablet {
+    padding: 0;
+    padding-bottom: 48px;
+  }
 }
 
 .form__container {
@@ -17,8 +23,17 @@
   border-bottom: 1px $lines-background-color solid;
 
   @include tablet {
-    padding: 0 60px;
     border-bottom: none;
+    border-top: 1px $lines-background-color solid;
+    flex: 1;
+  }
+}
+
+.form__row {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
   }
 }
 
@@ -36,6 +51,25 @@
 
   @include tablet {
     padding-top: 0;
+    margin-bottom: 28px;
+    width: 100%;
+    max-width: 400px;
+
+    font-size: 21px;
+  }
+}
+
+.form__title-wrapper {
+  @include tablet {
+    display: inline-block;
+    max-width: 310px;
+  }
+}
+
+.form__feedback-content {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -45,7 +79,7 @@
 }
 
 .form__input {
-  width: 280px;
+  width: 100%;
   height: 58px;
   background-color: $inputs-background-color;
   border: none;
@@ -68,6 +102,10 @@
   margin-right: 16px;
   width: 44px;
   height: 44px;
+
+  @include tablet {
+    appearance: none;
+  }
 }
 
 .form__label-controls {
@@ -77,6 +115,17 @@
   border: none;
 
   @include form-text;
+
+  @include tablet {
+    margin-right: 16px;
+    min-width: 224px;
+  }
+}
+
+.form__label-checkbox {
+  @include tablet {
+    margin-left: 32px;
+  }
 }
 
 .form__control-mark {
@@ -123,4 +172,16 @@
   width: 280px;
   height: 150px;
   font-family: inherit;
+}
+
+.form__container--radio {
+  @include tablet {
+    margin: 0 96px;
+  }
+}
+
+.form__container--checkbox {
+  @include tablet {
+    margin: 0 144px;
+  }
 }
