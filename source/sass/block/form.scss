@@ -34,6 +34,18 @@
     display: flex;
     justify-content: space-between;
     gap: 88px;
+    position: relative;
+  }
+}
+
+.form__row::before {
+  @include tablet {
+    content: "";
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 50%;
+    height: 95%;
+    width: 1px;
   }
 }
 
