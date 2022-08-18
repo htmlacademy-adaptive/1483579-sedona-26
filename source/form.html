@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Форма отзыва</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <div class="container">
@@ -44,18 +45,18 @@
             <fieldset class="form__container form-wrapper">
               <legend class="form__title">Представьтесь:</legend>
               <label class="form__label" for="name">Имя*:</label>
-              <input class="form__input input-container" type="text" id="name" placeholder="Пётр" name="name" required>
+              <input class="form__input input-container form__input--initials" type="text" id="name" placeholder="Пётр" name="name" required>
               <label class="form__label" for="surname">Фамилия*:</label>
-              <input class="form__input input-container" type="text" id="surname" placeholder="Пустота" name="surname" required>
+              <input class="form__input input-container form__input--initials" type="text" id="surname" placeholder="Пустота" name="surname" required>
               <label class="form__label" for="patronymic">Отчество*:</label>
-              <input class="form__input input-container" type="text" id="patronymic" placeholder="Викторович" name="patronymic">
+              <input class="form__input input-container form__input--initials" type="text" id="patronymic" placeholder="Викторович" name="patronymic">
             </fieldset>
             <fieldset class="form__container form-wrapper">
               <legend class="form__title">Контактная информация:</legend>
               <label class="form__label" for="phone">Контактный телефон*:</label>
-              <input class="form__input form__input--contacts input-container form__input--icon-phone" type="text" id="phone" placeholder="Введите телефон" name="phone" required>
+              <input class="form__input input-container form__input--icon-phone" type="text" id="phone" placeholder="Введите телефон" name="phone" required>
               <label class="form__label" for="e-mail">Электронная почта*:</label>
-              <input class="form__input form__input--contacts input-container form__input--icon-email" type="text" id="e-mail" placeholder="Введите e-mail" name="e-mail" required>
+              <input class="form__input input-container form__input--icon-email" type="text" id="e-mail" placeholder="Введите e-mail" name="e-mail" required>
             </fieldset>
           </div>
           <fieldset class="form__container form-wrapper form__container--radio">
@@ -109,8 +110,10 @@
             <legend class="form__title"><span class="form__title-wrapper">Опишите свои эмоции:</span></legend>
             <textarea  tarea class="form__input form__input--textarea input-container" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5" cols="25"></textarea>
           </fieldset>
-          <button class="form__button button button--colored" type="submit">Отправить отзыв</button>
-          <span class="form__comment">* — обязательные поля</span>
+          <div class="form__button-block">
+            <button class="form__button button button--colored" type="submit">Отправить отзыв</button>
+            <span class="form__comment">* — обязательные поля</span>
+          </div>
         </form>
       </main>
       <footer class="general-footer">

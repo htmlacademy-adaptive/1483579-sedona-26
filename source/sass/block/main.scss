@@ -53,12 +53,14 @@
   content: "";
   position: absolute;
   background-image: url("../../img/decorative/SEDONA.svg");
-  width: 320px;
+  width: 100%;
   height: 58px;
   background-repeat: no-repeat;
+  background-position: center;
   top: 68px;
-  left: 46px;
+  left: 50%;
   background-color: #ffffff00;
+  transform: translateX(-50%);
 }
 
 .main__welcome-block--small::after {

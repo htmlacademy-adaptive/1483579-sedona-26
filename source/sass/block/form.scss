@@ -87,10 +87,6 @@
   @include form-text;
 }
 
-.form__input--contacts {
-  color: $opacity-primary-color;
-}
-
 .form__input:not(:last-child),
 .form__label-controls:not(:last-child) {
   margin-bottom: 16px;
@@ -153,6 +149,11 @@
   display: block;
   margin: 0 auto;
   text-transform: inherit;
+
+  @include tablet {
+    min-width: 324px;
+    margin: 0;
+  }
 }
 
 .form__comment {
@@ -169,12 +170,27 @@
 }
 
 .form__input--textarea {
-  width: 280px;
+  width: 100%;
   height: 150px;
   font-family: inherit;
 }
 
-.form__container--radio {
+.form__input::placeholder {
+  color: $opacity-primary-color;
+}
+
+.form__input--initials::placeholder {
+  color: $text-color-primary;
+}
+
+.form__button-block {
+  @include tablet {
+    display: flex ;
+    justify-content: space-between;
+  }
+}
+
+/*.form__container--radio {
   @include tablet {
     margin: 0 96px;
   }
@@ -184,4 +200,4 @@
   @include tablet {
     margin: 0 144px;
   }
-}
+}*/
