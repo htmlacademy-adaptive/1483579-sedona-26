@@ -41,7 +41,7 @@
 .form__row::before {
   @include tablet {
     content: "";
-    background-color: #DBDBDB;
+    background-color: #dbdbdb;
     position: absolute;
     left: 50%;
     height: 95%;
@@ -199,14 +199,14 @@
 
 .form__input--icon-phone::after {
   @include tablet {
-  content: "";
-  position: absolute;
-  background-color: $inputs-icon-background-color;
-  background-image: url("../../img/decorative/icon-phone.svg");
-  width: 18px;
-  height: 18px;
-  background-position: center;
-  background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    background-color: $inputs-icon-background-color;
+    background-image: url("../../img/decorative/icon-phone.svg");
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -230,7 +230,7 @@
 
 .form__button-block {
   @include tablet {
-    display: flex ;
+    display: flex;
     justify-content: space-between;
   }
 }
