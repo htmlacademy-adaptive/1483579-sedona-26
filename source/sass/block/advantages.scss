@@ -4,6 +4,8 @@
   margin: 0;
   position: relative;
 
+  counter-reset: advantages;
+
   @include tablet {
     display: grid;
     grid-template-areas:
@@ -51,6 +53,7 @@
     width: 67%;
   }
 }
+
 .advantages__item:first-child::before {
   content: "";
   position: absolute;

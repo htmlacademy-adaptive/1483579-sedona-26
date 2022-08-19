@@ -9,10 +9,31 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  position: relative;
 
   @include tablet {
     margin-bottom: 65px;
     font-size: 21px;
+  }
+
+  &::after {
+    display: block;
+    font-size: 14px;
+    line-height: inherit;
+    margin-top: 12px;
+    position: absolute;
+    font-weight: 400;
+    counter-increment: advantages;
+    color: $text-color-secondary;
+    content: "— №"counters(advantages,".")" —";
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.content__title--colored {
+  &::after {
+    color: $text-color-lighten;
   }
 }
 

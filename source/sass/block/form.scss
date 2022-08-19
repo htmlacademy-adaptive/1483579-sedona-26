@@ -191,6 +191,25 @@
   margin-right: 20px;
 }
 
+.form__label--phone {
+  @include tablet {
+    position: relative;
+  }
+}
+
+.form__input--icon-phone::after {
+  @include tablet {
+  content: "";
+  position: absolute;
+  background-color: $inputs-icon-background-color;
+  background-image: url("../../img/decorative/icon-phone.svg");
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+}
+
 .form__control-mark--checkbox {
   border-radius: 4px;
 }

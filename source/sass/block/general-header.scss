@@ -6,22 +6,6 @@
   justify-content: end;
 }
 
-.toggle {
-  background-image: url("../../img/content/icon-menu.svg"); //не удаётся подключить изображение
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-color: $background-color-primary;
-  border: none;
-
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-
 .general-header__toggle {
   margin: 16px;
 }

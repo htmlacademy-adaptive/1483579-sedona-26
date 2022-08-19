@@ -9,7 +9,7 @@
   <body class="page__body">
     <div class="container">
       <header class="general-header">
-        <button class="general-header__toggle toggle" type="button" onclick="document.querySelector('.navigation__list--opened').classList.remove('navigation__list--closed')">
+        <button class="general-header__toggle toggle toggle__open" type="button" onclick="document.querySelector('.navigation__list').classList.remove('navigation__list--closed')">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="general-header__logo" href="index.html">
@@ -17,8 +17,11 @@
         </a>
         <nav class="general-header__nav navigation">
           <ul class="navigation__list navigation__list--opened navigation__list--closed">
-            <li class="navigation__item navigation__item--current">
+            <li class="navigation__item navigation__item--current main-page">
               <a class="navigation__link" href="index.html">Главная</a>
+              <button class="navigation__toggle toggle toggle__close" type="button" onclick="document.querySelector('.navigation__list').classList.add('navigation__list--closed')">
+                <span class="visually-hidden">Кнопка закрыть</span>
+              </button>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Фото и видео</a>
@@ -45,21 +48,21 @@
           <ol class="advantages__list">
             <li class="advantages__item advantages__item--colored-dark row-1">
               <div class="content content--whith-photo">
-                <h3 class="content__title">Настоящий городок</h3>
+                <h3 class="content__title content__title--colored">Настоящий городок</h3>
                 <!-- Сделать псевдо "— №1 —" -->
                 <p class="content__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <img class="advantages__image" src="img/content/advantage-real-town.jpg" width="320" height="260" alt="Живой город Седона.">
               <ul class="advantages__description-list description-list">
-                <li class="description-list__item">
+                <li class="description-list__item description-list__item--living">
                   <h3 class="description-list__title">Жилье</h3>
                   <p class="description-list__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
                 </li>
-                <li class="description-list__item">
+                <li class="description-list__item description-list__item--food">
                   <h3 class="description-list__title">Еда</h3>
                   <p class="description-list__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                 </li>
-                <li class="description-list__item">
+                <li class="description-list__item description-list__item--gifts">
                   <h3 class="description-list__title">Сувениры</h3>
                   <p class="description-list__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
                 </li>
@@ -67,7 +70,7 @@
             </li>
             <li class="advantages__item advantages__item--colored-dark advantages__item--reverse row-2">
               <div class="content content--whith-photo">
-                <h3 class="content__title">Там есть мост дьявола</h3>
+                <h3 class="content__title content__title--colored">Там есть мост дьявола</h3>
                 <!-- Сделать псевдо "— №2 —" -->
                 <p class="content__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
               </div>

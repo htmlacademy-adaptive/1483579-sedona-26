@@ -1,0 +1,28 @@
+.toggle {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-color: $background-color-primary;
+  border: none;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.toggle__open {
+  background-image: url("../../img/content/icon-menu.svg");
+}
+
+.toggle__close {
+  position: absolute;
+  background-image: url("../../img/content/icon-close-menu.svg");
+  background-color: inherit;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 20px;
+}
