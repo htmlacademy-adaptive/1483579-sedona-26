@@ -197,16 +197,39 @@
   }
 }
 
-.form__input--icon-phone::after {
+.form__label--phone::after {
   @include tablet {
     content: "";
     position: absolute;
+    display: block;
     background-color: $inputs-icon-background-color;
     background-image: url("../../img/decorative/icon-phone.svg");
-    width: 18px;
-    height: 18px;
+    width: 58px;
+    height: 58px;
     background-position: center;
     background-repeat: no-repeat;
+    right: 0;
+  }
+}
+
+.form__label--email {
+  @include tablet {
+    position: relative;
+  }
+}
+
+.form__label--email::after {
+  @include tablet {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $inputs-icon-background-color;
+    background-image: url("../../img/decorative/icon-mail.svg");
+    width: 58px;
+    height: 58px;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
   }
 }
 
