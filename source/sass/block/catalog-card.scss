@@ -1,6 +1,10 @@
 .catalog-card {
   padding: 24px 20px;
   position: relative;
+
+  @include tablet {
+    padding: 0px 60px;
+  }
 }
 
 .catalog-card::before {

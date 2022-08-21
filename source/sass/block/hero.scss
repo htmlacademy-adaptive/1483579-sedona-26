@@ -66,6 +66,12 @@
   }
 }
 
+.hero--catalog {
+  @include tablet {
+    padding: 66px 155px 66px;
+  }
+}
+
 .hero__title--big {
   @include tablet {
     font-size: 30px;
