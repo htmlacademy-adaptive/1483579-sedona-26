@@ -4,12 +4,19 @@
 
 .card__caption {
   margin-bottom: 10px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .card__image {
   display: block;
   width: 100%;
   object-fit: cover;
+  @include tablet {
+    max-height: 268px;
+  }
 }
 
 .card__title {

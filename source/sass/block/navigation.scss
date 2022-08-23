@@ -32,7 +32,7 @@
     padding: 0;
 
     &:nth-child(2) {
-      margin-right: 113px;
+      margin-right: 16%;
     }
   }
 }
@@ -70,5 +70,11 @@
 
   @include tablet {
     display: flex;
+  }
+}
+
+.navigation__link--current {
+  @include tablet {
+    color: $text-current-page-color;
   }
 }

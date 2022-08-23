@@ -70,6 +70,10 @@
   @include tablet {
     padding: 66px 155px 66px;
   }
+
+  @include desktop {
+    padding: 100px 370px 66px;
+  }
 }
 
 .hero__title--big {
