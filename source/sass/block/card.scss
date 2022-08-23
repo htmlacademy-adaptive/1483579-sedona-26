@@ -3,7 +3,11 @@
 }
 
 .card__caption {
-  margin: 15px 0 10px;
+  margin-bottom: 10px;
+}
+
+.card__image {
+  display: block;
 }
 
 .card__title {
@@ -16,6 +20,37 @@
   text-transform: none;
 }
 
+.card__like-icon {
+  @include tablet {
+    display: block;
+  }
+}
+
+.card__like {
+  @include tablet {
+    display: block;
+  }
+}
+
 .card__likes {
   font-weight: 700;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    min-width: 60px;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.card__caption-block {
+  padding-top: 15px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 15px;
+    background-color: $inputs-background-color;
+  }
 }
