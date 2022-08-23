@@ -3,8 +3,12 @@
   position: relative;
 
   @include tablet {
-    padding: 0 60px;
+    padding: 0;
   }
+}
+
+.catalog-card:first-of-type {
+  grid-column: 1/-1;
 }
 
 .catalog-card::before {
@@ -15,4 +19,8 @@
   width: 100%;
   top: 0;
   left: 0;
+
+  @include tablet {
+    display: none;
+  }
 }
