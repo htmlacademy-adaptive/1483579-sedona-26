@@ -5,6 +5,10 @@
     border-top: none;
     padding: 0 60px;
   }
+
+  @include desktop {
+    padding: 0 120px;
+  }
 }
 
 .form-wrapper {
@@ -14,6 +18,10 @@
   @include tablet {
     padding: 0;
     padding-bottom: 48px;
+  }
+
+  @include desktop {
+    padding: 0;
   }
 }
 
@@ -35,6 +43,9 @@
     justify-content: space-between;
     gap: 88px;
     position: relative;
+  }
+  @include desktop {
+    margin-bottom: 76px;
   }
 }
 
@@ -66,7 +77,6 @@
     margin-bottom: 28px;
     width: 100%;
     max-width: 400px;
-
     font-size: 21px;
   }
 }
@@ -82,6 +92,10 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding: 16px;
+    margin-bottom: 56px;
   }
 }
 
@@ -102,6 +116,10 @@
 .form__input:not(:last-child),
 .form__label-controls:not(:last-child) {
   margin-bottom: 16px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .form__input-controls {
@@ -133,6 +151,10 @@
 .form__label-checkbox {
   @include tablet {
     margin-left: 32px;
+  }
+
+  @include desktop {
+    margin-left: 0;
   }
 }
 
@@ -256,6 +278,10 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.form__feedback-content--paddings {
+  padding: 0 31px;
 }
 
 /*.form__container--radio {

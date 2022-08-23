@@ -1,5 +1,9 @@
 .card {
   margin: 0;
+
+  @include desktop {
+    position: relative;
+  }
 }
 
 .card__caption {
@@ -14,6 +18,7 @@
   display: block;
   width: 100%;
   object-fit: cover;
+
   @include tablet {
     max-height: 268px;
   }
@@ -61,5 +66,13 @@
     justify-content: space-between;
     padding: 22px 20px 15px;
     background-color: $inputs-background-color;
+  }
+
+  @include desktop {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $opacity-primary-color;
+    color: $text-color-lighten;
   }
 }
