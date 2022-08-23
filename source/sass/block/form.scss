@@ -11,20 +11,6 @@
   }
 }
 
-.form-wrapper {
-  padding: 24px 20px 39px;
-  margin: 0;
-
-  @include tablet {
-    padding: 0;
-    padding-bottom: 48px;
-  }
-
-  @include desktop {
-    padding: 0;
-  }
-}
-
 .form__container {
   border: none;
   position: relative;
@@ -155,6 +141,7 @@
 
   @include desktop {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -280,8 +267,12 @@
   }
 }
 
+.form__button-block--paddings {
+  padding: 0 50px;
+}
+
 .form__feedback-content--paddings {
-  padding: 0 31px;
+  padding: 31px 0;
 }
 
 /*.form__container--radio {
