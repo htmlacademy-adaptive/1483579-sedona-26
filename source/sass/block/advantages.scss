@@ -3,12 +3,55 @@
   padding: 0;
   margin: 0;
   position: relative;
+
+  counter-reset: advantages;
+
+  @include tablet {
+    display: grid;
+    grid-template-areas: "row-1 row-1 row-1" "row-2 row-2 row-2" "col-3 col-4 col-5";
+  }
+}
+
+.row-1 {
+  grid-area: row-1;
+}
+
+.row-2 {
+  grid-area: row-2;
+}
+
+.col-3 {
+  grid-area: col-3;
+}
+
+.col-4 {
+  grid-area: col-4;
+}
+
+.col-5 {
+  grid-area: col-5;
 }
 
 .advantages__description-list {
   list-style-type: none;
   padding: 23px 18px 52px;
   margin: 0;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.advantages__image {
+  display: block;
+
+  @include tablet {
+    width: 67%;
+    object-fit: cover;
+    min-height: 100%;
+  }
 }
 
 .advantages__item:first-child::before {
@@ -21,8 +64,37 @@
   background-color: $icons-background-color;
   top: -11px;
   left: 0;
+
+  @media screen and (min-width: 321px) {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .advantages__item--colored-dark {
   background-color: $background-color-secondary;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item--reverse {
+  @include tablet {
+    flex-direction: row-reverse;
+  }
+}
+
+.advantages__item--wrapper {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
 }

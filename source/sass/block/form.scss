@@ -1,22 +1,54 @@
-.form-wrapper {
-  padding: 24px 20px 39px;
-  margin: 0;
+.form {
+  border-top: 1px $lines-background-color solid;
+
+  @include tablet {
+    border-top: none;
+    padding: 0 60px;
+  }
+
+  @include desktop {
+    padding: 0 120px 24px;
+  }
 }
 
 .form__container {
   border: none;
   position: relative;
-  margin-top: 24px;
+  border-bottom: 1px $lines-background-color solid;
+
+  @include tablet {
+    border-bottom: none;
+    border-top: 1px $lines-background-color solid;
+    flex: 1;
+  }
 }
 
-.form__container::before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  background-color: $lines-background-color;
-  width: 100%;
-  top: -54px;
-  left: 0;
+.form__row {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    gap: 84px;
+    position: relative;
+  }
+
+  @include desktop {
+    margin-bottom: 76px;
+  }
+}
+
+.form__row::before {
+  @include tablet {
+    content: "";
+    background-color: #dbdbdb;
+    position: absolute;
+    left: 50%;
+    height: 95%;
+    width: 1px;
+  }
+}
+
+.form__container:last-of-type {
+  border-bottom: none;
 }
 
 .form__title {
@@ -25,6 +57,33 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  padding-top: 24px;
+
+  @include tablet {
+    padding-top: 0;
+    margin-bottom: 28px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 21px;
+  }
+}
+
+.form__title-wrapper {
+  @include tablet {
+    display: inline-block;
+    max-width: 310px;
+  }
+}
+
+.form__feedback-content {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding: 16px;
+    /*margin-bottom: 56px;*/
+  }
 }
 
 .form__label {
@@ -33,7 +92,7 @@
 }
 
 .form__input {
-  width: 280px;
+  width: 100%;
   height: 58px;
   background-color: $inputs-background-color;
   border: none;
@@ -41,13 +100,13 @@
   @include form-text;
 }
 
-.form__input--contacts {
-  color: $opacity-primary-color;
-}
-
 .form__input:not(:last-child),
 .form__label-controls:not(:last-child) {
   margin-bottom: 16px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .form__input-controls {
@@ -56,6 +115,10 @@
   margin-right: 16px;
   width: 44px;
   height: 44px;
+
+  @include tablet {
+    appearance: none;
+  }
 }
 
 .form__label-controls {
@@ -65,6 +128,26 @@
   border: none;
 
   @include form-text;
+
+  @include tablet {
+    margin-right: 16px;
+    min-width: 224px;
+
+    &--radio {
+      margin-right: 50px;
+    }
+  }
+}
+
+.form__label-checkbox {
+  @include tablet {
+    margin-left: 32px;
+  }
+
+  @include desktop {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .form__control-mark {
@@ -85,13 +168,32 @@
   background-repeat: no-repeat;
   border-radius: 50%;
   top: 14px;
-  right: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form__input-controls[type="checkbox"]:checked + .form__control-mark::before {
+  content: "";
+  background-image: url("../../img/decorative/tick-icon.svg");
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .form__button {
   display: block;
   margin: 0 auto;
   text-transform: inherit;
+
+  @include tablet {
+    min-width: 324px;
+    margin: 0;
+  }
 }
 
 .form__comment {
@@ -100,7 +202,49 @@
   line-height: 21px;
   color: $opacity-primary-color;
   text-align: end;
-  margin-right: 20px;
+  margin-right: 3px;
+}
+
+.form__label--phone {
+  @include tablet {
+    position: relative;
+  }
+}
+
+.form__label--phone::after {
+  @include tablet {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $inputs-icon-background-color;
+    background-image: url("../../img/decorative/icon-phone.svg");
+    width: 58px;
+    height: 58px;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+  }
+}
+
+.form__label--email {
+  @include tablet {
+    position: relative;
+  }
+}
+
+.form__label--email::after {
+  @include tablet {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $inputs-icon-background-color;
+    background-image: url("../../img/decorative/icon-mail.svg");
+    width: 58px;
+    height: 58px;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+  }
 }
 
 .form__control-mark--checkbox {
@@ -108,7 +252,49 @@
 }
 
 .form__input--textarea {
-  width: 280px;
+  width: 100%;
   height: 150px;
   font-family: inherit;
 }
+
+.form__input::placeholder {
+  color: $opacity-primary-color;
+}
+
+.form__input--initials::placeholder {
+  color: $text-color-primary;
+}
+
+.form__button-block {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__button-block--paddings {
+  @include desktop {
+    padding: 0 50px;
+  }
+}
+
+.form__feedback-content--paddings {
+  padding: 31px 0;
+}
+
+.form--radio {
+  @include tablet {
+    justify-content: start;
+  }
+}
+/*.form__container--radio {
+  @include tablet {
+    margin: 0 96px;
+  }
+}
+
+.form__container--checkbox {
+  @include tablet {
+    margin: 0 144px;
+  }
+}*/

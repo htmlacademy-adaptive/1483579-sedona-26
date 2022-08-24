@@ -9,6 +9,32 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  position: relative;
+
+  @include tablet {
+    margin-bottom: 65px;
+    font-size: 21px;
+  }
+
+  &::after {
+    display: block;
+    font-size: 14px;
+    line-height: inherit;
+    margin-top: 12px;
+    position: absolute;
+    font-weight: 400;
+    counter-increment: advantages;
+    color: $text-color-secondary;
+    content: "— №"counters(advantages, ".") " —";
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.content__title--colored {
+  &::after {
+    color: $text-color-lighten;
+  }
 }
 
 .content__text {
@@ -19,24 +45,37 @@
 .content--whith-photo {
   color: $background-color-primary;
   padding: 45px 16px 38px;
-}
 
-/*.content--whith-photo:first-of-type {
-  color: $background-color-primary;
-  padding: 57px 18px 40px;
-}*/
+  @include tablet {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 40px 32px 43px;
+  }
+}
 
 .content--colored:not(:last-child) {
   background-color: $items-background-color;
   padding: 24px 19px 0;
+
+  @include tablet {
+    padding: 40px 34px 63px;
+  }
 }
 
 .content__text--underlined {
   border-bottom: 1px solid #d6d6d6;
   padding-bottom: 24px;
+
+  @include tablet {
+    border-bottom: none;
+  }
 }
 
 .content--colored:last-child {
   background-color: $items-background-color;
   padding: 24px 19px 24px;
+
+  @include tablet {
+    padding: 40px 34px 63px;
+  }
 }

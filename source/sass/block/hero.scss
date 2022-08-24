@@ -1,6 +1,15 @@
 .hero {
   position: relative;
   padding: 32px 19px 24px;
+
+  @include tablet {
+    padding: 46px 0 54px;
+
+    &--welcome {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .hero__title {
@@ -10,22 +19,56 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @include tablet {
+    font-size: 21px;
+
+    &--catalog {
+      font-size: 30px;
+    }
+  }
 }
 
 .hero__text {
   margin: 0;
   text-align: center;
+
+  @include tablet {
+    margin-bottom: 0;
+
+    &--photo {
+      max-width: 446px;
+      margin: 0 auto;
+    }
+
+    &--catalog {
+      max-width: 446px;
+      margin: 0 auto;
+    }
+
+    &--submit {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .hero--intersted {
   padding: 38px 18px 32px;
+
+  @include tablet {
+    padding: 60px 166px 40px;
+  }
 }
 
 .hero__title--intersted {
-  font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
   margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero--modal-error {
@@ -35,4 +78,35 @@
 
 .hero--modal-submitted {
   padding: 38px;
+
+  @include tablet {
+    padding: 53px 98px 34px;
+  }
+}
+
+.hero--form {
+  @include tablet {
+    padding: 64px 166px 102px;
+  }
+
+  @include desktop {
+    padding: 115px 382px 67px;
+  }
+}
+
+.hero--catalog {
+  @include tablet {
+    padding: 66px 155px 66px;
+  }
+
+  @include desktop {
+    padding: 100px 370px 66px;
+  }
+}
+
+.hero__title--big {
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }

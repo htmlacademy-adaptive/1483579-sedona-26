@@ -1,18 +1,20 @@
 @import "./variables.scss";
 @import "./mixins.scss";
-@import "./block/advantage-wrapper.scss";
 @import "./block/advantages.scss";
 @import "./block/button.scss";
 @import "./block/card.scss";
 @import "./block/catalog-card.scss";
-@import "./block/container.scss";
 @import "./block/content.scss";
+@import "./block/container.scss";
 @import "./block/copyright.scss";
 @import "./block/description-list.scss";
+@import "./global.scss";
+@import "./block/main-page.scss";
 @import "./block/main.scss";
 @import "./block/modal-container.scss";
 @import "./fonts.scss";
 @import "./block/form.scss";
+@import "./block/form-wrapper.scss";
 @import "./block/general-footer.scss";
 @import "./block/general-header.scss";
 @import "./block/hero.scss";
@@ -21,6 +23,7 @@
 @import "./block/navigation.scss";
 @import "./block/page.scss";
 @import "./block/social.scss";
+@import "./block/toggle.scss";
 @import "./block/video-card.scss";
 @import "./block/video.scss";
 

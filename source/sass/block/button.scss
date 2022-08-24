@@ -12,21 +12,36 @@
 
 .button--colored {
   background-color: $background-color-secondary;
-  width: 282px;
-  height: 58px;
+  max-width: 282px;
   box-sizing: border-box;
   border: none;
   text-align: center;
+
+  @include tablet {
+    min-width: 458px;
+  }
 }
 
 .button--modal-error {
-  width: 180px;
+  width: 100%;
   height: 58px;
-  display: block;
-  margin: 0 auto;
+
+  @include tablet {
+    min-width: 272px;
+  }
 }
 
 .button--modal-submitted,
 .button--modal-error {
   font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button--modal-submitted {
+  min-width: 282px;
+
+  @include tablet {
+    min-width: 458px;
+  }
 }

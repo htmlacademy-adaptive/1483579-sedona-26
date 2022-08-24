@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <div class="container">
       <header class="general-header">
-        <button class="general-header__toggle toggle" type="button">
+        <button class="general-header__toggle toggle toggle__open" type="button" onclick="document.querySelector('.navigation__list').classList.remove('navigation__list--closed')">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="general-header__logo" href="index.html">
           <img class="general-header__logo-image" src="img/content/logo-header.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
         <nav class="general-header__nav navigation">
-          <ul class="navigation__list navigation__list--opened">
-            <li class="navigation__item navigation__item--current">
-              <a class="navigation__link" href="index.html">Главная</a>
+          <ul class="navigation__list navigation__list--opened navigation__list--closed">
+            <li class="navigation__item main-page">
+              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+              <button class="navigation__toggle toggle toggle__close" type="button" onclick="document.querySelector('.navigation__list').classList.add('navigation__list--closed')">
+                <span class="visually-hidden">Кнопка закрыть</span>
+              </button>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Фото и видео</a>
@@ -36,53 +40,55 @@
           <h1 class="visually-hidden">Добро пожаловать в&nbsp;городок Седона.</h1>
           <img class="main__welcome-img" src="img/content/welcome-index.svg" width="282" height="214" alt="Welcome to Sedona.">
         </div>
-        <section class="hero">
-          <h2 class="hero__title">Седона&nbsp;&mdash; небольшой<br> городок в&nbsp;Аризоне,<br> заслуживающий большего!</h2>
+        <section class="hero hero--welcome">
+          <h2 class="hero__title">Седона&nbsp;&mdash; небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</h2>
           <p class="hero__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
         </section>
         <div class="advantages">
           <ol class="advantages__list">
-            <li class="advantages__item advantages__item--colored-dark">
-              <div class="content content--whith-photo">
-                <h3 class="content__title">Настоящий городок</h3>
-                <!-- Сделать псевдо "— №1 —" -->
-                <p class="content__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+            <li class="advantages__item advantages__item--colored-dark row-1">
+              <div class="advantages__item--wrapper">
+                <div class="content content--whith-photo">
+                  <h3 class="content__title content__title--colored">Настоящий городок</h3>
+                  <!-- Сделать псевдо "— №1 —" -->
+                  <p class="content__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <img class="advantages__image" src="img/content/advantage-real-town.jpg" width="320" height="260" alt="Живой город Седона.">
               </div>
-              <img class="advantages__image" src="img/content/advantage-real-town.jpg" width="320" height="260" alt="Живой город Седона.">
               <ul class="advantages__description-list description-list">
-                <li class="description-list__item">
+                <li class="description-list__item description-list__item--living">
                   <h3 class="description-list__title">Жилье</h3>
-                  <p class="description-list__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+                  <p class="description-list__text">Рекомендуем пожить&nbsp;в настоящем мотеле, все как&nbsp;в кино!</p>
                 </li>
-                <li class="description-list__item">
+                <li class="description-list__item description-list__item--food">
                   <h3 class="description-list__title">Еда</h3>
                   <p class="description-list__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                 </li>
-                <li class="description-list__item">
+                <li class="description-list__item description-list__item--gifts">
                   <h3 class="description-list__title">Сувениры</h3>
                   <p class="description-list__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
                 </li>
               </ul>
             </li>
-            <li class="advantages__item advantages__item--colored-dark">
+            <li class="advantages__item advantages__item--colored-dark advantages__item--reverse row-2">
               <div class="content content--whith-photo">
-                <h3 class="content__title">Там есть мост дьявола</h3>
+                <h3 class="content__title content__title--colored">Там есть мост дьявола</h3>
                 <!-- Сделать псевдо "— №2 —" -->
-                <p class="content__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
+                <p class="content__text">Да, по&nbsp;нему можно пройти! Если&nbsp;вы осмелитесь, конечно</p>
               </div>
               <img class="advantages__image" src="img/content/advantage-bridge.jpg" width="320" height="260" alt="Мост дьявола в Седоне.">
             </li>
-            <li class="advantages__item content content--colored">
+            <li class="advantages__item content content--colored col-3">
               <h3 class="content__title">Небольшая площадь</h3>
               <!-- Сделать псевдо "— №3 —" -->
               <p class="content__text content__text--underlined">Все интересные места находятся очень близко</p>
             </li>
-            <li class="advantages__item content content--colored">
+            <li class="advantages__item content content--colored col-4">
               <h3 class="content__title">Красивая дорога</h3>
               <!-- Сделать псевдо "— №4 —" -->
-              <p class="content__text content__text--underlined">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+              <p class="content__text content__text--underlined">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем&nbsp;не&nbsp;скучно!</p>
             </li>
-            <li class="advantages__item content content--colored">
+            <li class="advantages__item content content--colored row-5">
               <h3 class="content__title">Мало туристов</h3>
               <!-- Сделать псевдо "— №5 —" -->
               <p class="content__text">Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</p>

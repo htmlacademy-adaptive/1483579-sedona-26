@@ -1,8 +1,23 @@
 .modal-container--error {
   padding: 44px 42px 34px;
+
+  @include tablet {
+    max-width: 400px;
+    padding: 54px 46px 100px;
+  }
 }
 
 .modal-container__button-wrapper {
   background-color: $inputs-background-color;
   padding: 20px;
+
+  @include tablet {
+    padding: 44px 90px;
+  }
+}
+
+.modal-container--submitted {
+  @include tablet {
+    max-width: 640px;
+  }
 }

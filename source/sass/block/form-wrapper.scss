@@ -1,0 +1,19 @@
+.form-wrapper {
+  padding: 24px 20px 39px;
+  margin: 0;
+
+  @include tablet {
+    padding: 0;
+    padding-bottom: 48px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.form-wrapper--textarea {
+  @include desktop {
+    padding: 0 50px 48px;
+  }
+}
