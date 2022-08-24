@@ -4,6 +4,11 @@
 
   @include tablet {
     padding: 46px 0 54px;
+
+    &--welcome {
+      max-width: 520px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -17,10 +22,10 @@
 
   @include tablet {
     font-size: 21px;
-  }
 
-  &--catalog {
-    font-size: 30px;
+    &--catalog {
+      font-size: 30px;
+    }
   }
 }
 
@@ -30,6 +35,21 @@
 
   @include tablet {
     margin-bottom: 0;
+
+    &--photo {
+      max-width: 446px;
+      margin: 0 auto;
+    }
+
+    &--catalog {
+      max-width: 446px;
+      margin: 0 auto;
+    }
+
+    &--submit {
+      max-width: 420px;
+      margin: 0 auto;
+    }
   }
 }
 

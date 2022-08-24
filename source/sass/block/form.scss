@@ -7,7 +7,7 @@
   }
 
   @include desktop {
-    padding: 0 120px;
+    padding: 0 120px 24px;
   }
 }
 
@@ -27,7 +27,7 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
-    gap: 88px;
+    gap: 84px;
     position: relative;
   }
   @include desktop {
@@ -81,7 +81,7 @@
     justify-content: center;
     align-items: baseline;
     padding: 16px;
-    margin-bottom: 56px;
+    /*margin-bottom: 56px;*/
   }
 }
 
@@ -131,6 +131,10 @@
   @include tablet {
     margin-right: 16px;
     min-width: 224px;
+
+    &--radio {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -197,7 +201,7 @@
   line-height: 21px;
   color: $opacity-primary-color;
   text-align: end;
-  margin-right: 20px;
+  margin-right: 3px;
 }
 
 .form__label--phone {
@@ -268,13 +272,20 @@
 }
 
 .form__button-block--paddings {
-  padding: 0 50px;
+  @include desktop {
+    padding: 0 50px;
+  }
 }
 
 .form__feedback-content--paddings {
   padding: 31px 0;
 }
 
+.form--radio {
+  @include tablet {
+    justify-content: start;
+  }
+}
 /*.form__container--radio {
   @include tablet {
     margin: 0 96px;
