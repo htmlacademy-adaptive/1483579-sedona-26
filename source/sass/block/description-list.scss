@@ -43,9 +43,10 @@
   width: 40px;
   height: 38px;
   background-repeat: no-repeat;
-  left: -6px;
-  bottom: 50%;
+  left: 0;
+  top: 15%;
   transform: translateY(-50%);
+  background-position: center;
 
   @include tablet {
     top: 78px;

@@ -13,6 +13,8 @@
 }
 
 .form-wrapper--textarea {
+  border-bottom: none;
+
   @include desktop {
     padding: 0 50px 48px;
   }

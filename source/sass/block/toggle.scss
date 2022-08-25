@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-color: $background-color-primary;
   border: none;
+  cursor: pointer;
 
   @include tablet {
     display: none;

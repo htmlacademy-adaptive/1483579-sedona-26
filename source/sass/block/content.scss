@@ -20,7 +20,7 @@
     display: block;
     font-size: 14px;
     line-height: inherit;
-    margin-top: 12px;
+    margin-top: 20px;
     position: absolute;
     font-weight: 400;
     counter-increment: advantages;
@@ -47,9 +47,12 @@
   padding: 45px 16px 38px;
 
   @include tablet {
-    box-sizing: border-box;
     width: 33%;
     padding: 40px 32px 43px;
+  }
+
+  @include desktop {
+    padding: 48px 52px 56px;
   }
 }
 
@@ -59,6 +62,10 @@
 
   @include tablet {
     padding: 40px 34px 63px;
+  }
+
+  @include desktop {
+    padding: 44px 44px 62px;
   }
 }
 
