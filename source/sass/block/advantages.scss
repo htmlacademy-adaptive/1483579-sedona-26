@@ -8,28 +8,8 @@
 
   @include tablet {
     display: grid;
-    grid-template-areas: "row-1 row-1 row-1" "row-2 row-2 row-2" "col-3 col-4 col-5";
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.row-1 {
-  grid-area: row-1;
-}
-
-.row-2 {
-  grid-area: row-2;
-}
-
-.col-3 {
-  grid-area: col-3;
-}
-
-.col-4 {
-  grid-area: col-4;
-}
-
-.col-5 {
-  grid-area: col-5;
 }
 
 .advantages__description-list {
@@ -80,6 +60,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    grid-column: 1 / -1;
   }
 }
 

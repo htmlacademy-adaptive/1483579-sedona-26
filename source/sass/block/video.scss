@@ -13,18 +13,22 @@
 }
 
 .video__toggle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 27px solid transparent;
+  border-left: 38px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 27px solid transparent;
+  background-color: transparent;
+  border-right: none;
+  top: 58%;
+  left: 54%;
+  transform: translate(-50%, 60%);
+  cursor: pointer;
+
   @include tablet {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 27px solid transparent;
-    border-left: 38px solid rgba(255, 255, 255, 0.7);
-    border-bottom: 27px solid transparent;
-    background-color: transparent;
-    border-right: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
   }
 }

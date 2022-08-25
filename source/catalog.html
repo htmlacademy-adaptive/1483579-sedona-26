@@ -9,7 +9,7 @@
   <body class="page__body">
     <div class="container">
       <header class="general-header">
-        <button class="general-header__toggle toggle" type="button" onclick="document.querySelector('.navigation__list--opened').classList.remove('navigation__list--closed')">
+        <button class="general-header__toggle toggle toggle__open" type="button" onclick="document.querySelector('.navigation__list').classList.remove('navigation__list--closed')">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="general-header__logo" href="index.html">
@@ -17,16 +17,19 @@
         </a>
         <nav class="general-header__nav navigation">
           <ul class="navigation__list navigation__list--opened navigation__list--closed">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
+            <li class="navigation__item main-page">
+              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+              <button class="navigation__toggle toggle toggle__close" type="button" onclick="document.querySelector('.navigation__list').classList.add('navigation__list--closed')">
+                <span class="visually-hidden">Кнопка закрыть</span>
+              </button>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="catalog.html">Фото и видео</a>
+              <a class="navigation__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="form.html">Форма Отзыва</a>
             </li>
-            <li class="navigation__item ">
+            <li class="navigation__item">
               <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>

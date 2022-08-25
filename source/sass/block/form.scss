@@ -42,13 +42,9 @@
     background-color: #dbdbdb;
     position: absolute;
     left: 50%;
-    height: 95%;
+    height: 90%;
     width: 1px;
   }
-}
-
-.form__container:last-of-type {
-  border-bottom: none;
 }
 
 .form__title {
@@ -103,10 +99,6 @@
 .form__input:not(:last-child),
 .form__label-controls:not(:last-child) {
   margin-bottom: 16px;
-
-  @include desktop {
-    margin-bottom: 0;
-  }
 }
 
 .form__input-controls {
@@ -187,8 +179,10 @@
 
 .form__button {
   display: block;
-  margin: 0 auto;
+  margin: 0 20px;
   text-transform: inherit;
+  max-width: 280px;
+  width: 100%;
 
   @include tablet {
     min-width: 324px;
@@ -202,7 +196,11 @@
   line-height: 21px;
   color: $opacity-primary-color;
   text-align: end;
-  margin-right: 3px;
+  margin-right: 20px;
+
+  @include tablet {
+    margin-right: 3px;
+  }
 }
 
 .form__label--phone {
@@ -266,6 +264,8 @@
 }
 
 .form__button-block {
+  margin-bottom: 24px;
+
   @include tablet {
     display: flex;
     justify-content: space-between;
