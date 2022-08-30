@@ -38,7 +38,10 @@
       <main class="main">
         <div class="main__welcome-block">
           <h1 class="visually-hidden">Добро пожаловать в&nbsp;городок Седона.</h1>
-          <img class="main__welcome-img" src="img/content/welcome-index.svg" width="282" height="214" alt="Welcome to Sedona.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/welcome-index-big.svg"> <!-- Как правильно адаптировать с размерами, они разные?-->
+            <img class="main__welcome-img" src="img/content/welcome-index.svg" width="282" height="214" alt="Welcome to Sedona.">
+          </picture>
         </div>
         <section class="hero hero--welcome">
           <h2 class="hero__title">Седона&nbsp;&mdash; небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</h2>
@@ -50,10 +53,13 @@
               <div class="advantages__item--wrapper">
                 <div class="content content--whith-photo">
                   <h3 class="content__title content__title--colored">Настоящий городок</h3>
-                  <!-- Сделать псевдо "— №1 —" -->
                   <p class="content__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="advantages__image" src="img/content/advantage-real-town.jpg" width="320" height="260" alt="Живой город Седона.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/advantage-real-town-desktop.jpg 1x, img/content/advantage-real-town-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/content/advantage-real-town-tablet.jpg 1x, img/content/advantage-real-town-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/content/advantage-real-town.jpg" srcset="img/content/advantage-real-town@2x.jpg" width="320" height="260" alt="Живой город Седона.">
+                </picture>
               </div>
               <ul class="advantages__description-list description-list">
                 <li class="description-list__item description-list__item--living">
@@ -73,10 +79,13 @@
             <li class="advantages__item advantages__item--colored-dark advantages__item--reverse row-2">
               <div class="content content--whith-photo">
                 <h3 class="content__title content__title--colored">Там есть мост дьявола</h3>
-                <!-- Сделать псевдо "— №2 —" -->
                 <p class="content__text">Да, по&nbsp;нему можно пройти! Если&nbsp;вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__image" src="img/content/advantage-bridge.jpg" width="320" height="260" alt="Мост дьявола в Седоне.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/advantage-bridge-desktop.jpg 1x, img/content/advantage-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/advantage-bridge-tablet.jpg 1x, img/content/advantage-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/content/advantage-bridge.jpg" srcset="img/content/advantage-bridge@2x.jpg" width="320" height="260" alt="Мост дьявола в Седоне.">
+              </picture>
             </li>
             <li class="advantages__item content content--colored col-3">
               <h3 class="content__title">Небольшая площадь</h3>
