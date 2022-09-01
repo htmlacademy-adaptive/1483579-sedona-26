@@ -41,13 +41,20 @@
   text-transform: none;
 }
 
-.card__like-icon {
+.card__like {
+  border: none;
+  background-color: transparent;
+
   @include tablet {
     display: block;
   }
+
+  @include desktop {
+    color: #fff;
+  }
 }
 
-.card__like {
+.card__like-numb {
   @include tablet {
     display: block;
   }
@@ -62,6 +69,19 @@
     min-width: 60px;
     align-items: center;
     gap: 8px;
+  }
+
+  @include desktop {
+    color: #fff;
+  }
+}
+
+.card__like-icon {
+  width: 23px;
+  height: 21px;
+
+  @include desktop {
+    fill: #fff;
   }
 }
 
