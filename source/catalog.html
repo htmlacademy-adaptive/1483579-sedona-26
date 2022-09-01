@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Галерея</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-32.svg">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -18,13 +22,13 @@
         <nav class="general-header__nav navigation">
           <ul class="navigation__list navigation__list--opened navigation__list--closed">
             <li class="navigation__item main-page">
-              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+              <a class="navigation__link" href="index.html">Главная</a>
               <button class="navigation__toggle toggle toggle__close" type="button" onclick="document.querySelector('.navigation__list').classList.add('navigation__list--closed')">
                 <span class="visually-hidden">Кнопка закрыть</span>
               </button>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Фото и видео</a>
+              <a class="navigation__link navigation__link--current" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="form.html">Форма Отзыва</a>
@@ -46,7 +50,11 @@
         <div class="main__photo-block">
           <div class="catalog-card">
             <figure class="card">
-              <img class="card__image" src="img/content/spaces.jpg" width="" height="" alt="Дорога, ведущая в закат.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/spaces-desktop.jpg 1x, img/content/spaces-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/spaces-tablet.jpg 1x, img/content/spaces-tablet@2x.jpg 2x" >
+                <img class="card__image" src="img/content/spaces.jpg" srcset="img/content/spaces@2x.jpg" width="280" height="280" alt="Дорога, ведущая в закат.">
+              </picture>
                 <figcaption class="card__caption card__caption-block">
                   <div>
                     <span class="card__title">Неродные просторы</span>
@@ -63,7 +71,11 @@
           </div>
           <div class="catalog-card">
             <figure class="card">
-              <img class="card__image" src="img/content/vegetation.jpg" width="" height="" alt="Местная растительность на фоне гор и скал.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/vegetation-desktop.jpg 1x, img/content/vegetation-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/vegetation-tablet.jpg 1x, img/content/vegetation-tablet@2x.jpg 2x" >
+                <img class="card__image" src="img/content/vegetation.jpg" srcset="img/content/vegetation@2x.jpg" width="280" height="280" alt="Местная растительность на фоне гор и скал.">
+              </picture>
                 <figcaption class="card__caption card__caption-block">
                   <div>
                     <span class="card__title">Местная растительность</span>
@@ -80,7 +92,11 @@
           </div>
           <div class="catalog-card">
             <figure class="card">
-              <img class="card__image" src="img/content/north-way.jpg" width="" height="" alt="Горные серпантины и дороги.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/north-way-desktop.jpg 1x, img/content/north-way-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/north-way-tablet.jpg 1x, img/content/north-way-tablet@2x.jpg 2x" >
+                <img class="card__image" src="img/content/north-way.jpg" srcset="img/content/north-way@2x.jpg" width="280" height="280" alt="Горные серпантины и дороги.">
+              </picture>
                 <figcaption class="card__caption card__caption-block">
                   <div>
                     <span class="card__title">Дорога на север</span>
@@ -97,7 +113,11 @@
           </div>
           <div class="catalog-card">
             <figure class="card">
-              <img class="card__image" src="img/content/devil-bridge.jpg" width="" height="" alt="Мост дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/devil-bridge-desktop.jpg 1x, img/content/devil-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/devil-bridge-tablet.jpg 1x, img/content/devil-bridge-tablet@2x.jpg 2x" >
+                <img class="card__image" src="img/content/devil-bridge.jpg" srcset="img/content/devil-bridge@2x.jpg" width="280" height="280" alt="Мост дьявола.">
+              </picture>
                 <figcaption class="card__caption card__caption-block">
                   <div class="">
                     <span class="card__title">Мост дьявола</span>
@@ -119,7 +139,7 @@
             <p class="hero__text hero__text--catalog">Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они не&nbsp;подорожали в&nbsp;очередной раз!</p>
           </section>
           <div class="video">
-            <video class="video__image" poster="img/content/video-preview.jpg" width="" height=""></video>
+            <video class="video__image" poster="img/content/video-preview.jpg" width="280" height="177"></video>
             <button class="video__toggle" type="button">
               <span class="visually-hidden">Запуск</span>
             </button>

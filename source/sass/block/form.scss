@@ -32,7 +32,7 @@
   }
 
   @include desktop {
-    margin-bottom: 76px;
+    margin-bottom: 8px;
   }
 }
 
@@ -166,7 +166,7 @@
 
 .form__input-controls[type="checkbox"]:checked + .form__control-mark::before {
   content: "";
-  background-image: url("../../img/decorative/tick-icon.svg");
+  background-image: url("../img/decorative/tick-icon.svg");
   width: 24px;
   height: 18px;
   position: absolute;
@@ -215,7 +215,7 @@
     position: absolute;
     display: block;
     background-color: $inputs-icon-background-color;
-    background-image: url("../../img/decorative/icon-phone.svg");
+    background-image: url("../img/decorative/icon-phone.svg");
     width: 58px;
     height: 58px;
     background-position: center;
@@ -236,7 +236,7 @@
     position: absolute;
     display: block;
     background-color: $inputs-icon-background-color;
-    background-image: url("../../img/decorative/icon-mail.svg");
+    background-image: url("../img/decorative/icon-mail.svg");
     width: 58px;
     height: 58px;
     background-position: center;
@@ -287,14 +287,10 @@
     justify-content: start;
   }
 }
-/*.form__container--radio {
-  @include tablet {
-    margin: 0 96px;
+
+.form__container--radio,
+.form__container--checkbox {
+  @include desktop {
+    margin-bottom: 56px;
   }
 }
-
-.form__container--checkbox {
-  @include tablet {
-    margin: 0 144px;
-  }
-}*/

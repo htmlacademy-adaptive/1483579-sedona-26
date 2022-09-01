@@ -7,9 +7,11 @@
     padding-bottom: 48px;
   }
 
-  @include desktop {
+  /*@include desktop {
     padding: 0;
-  }
+    margin-left: 0;
+    margin-right: 0;
+  }*/
 }
 
 .form-wrapper--textarea {

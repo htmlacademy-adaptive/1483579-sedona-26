@@ -28,9 +28,9 @@
   display: block;
 
   @include tablet {
-    width: 67%;
+    width: 100%;
     object-fit: cover;
-    min-height: 100%;
+    min-height: 103%;
   }
 }
 
@@ -67,6 +67,7 @@
 .advantages__item--reverse {
   @include tablet {
     flex-direction: row-reverse;
+    flex-wrap: nowrap;
   }
 }
 

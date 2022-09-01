@@ -3,7 +3,7 @@
 }
 
 .main__welcome-block {
-  background-image: url("../img/decorative/back-desktop.jpg");
+  background-image: url("../img/decorative/back-mobile.jpg");
   background-color: $background-color-secondary;
   height: 390px;
   background-repeat: no-repeat;
@@ -15,15 +15,37 @@
   &--small {
     height: 158px;
     background-position: bottom;
+  }
 
-    @include tablet {
-      height: 290px;
+  @include resolution {
+    background-image: url("../img/decorative/back-mobile@2x.jpg");
+    background-size: 900px auto;
+  }
+
+  @include tablet {
+    background-image: url("../img/decorative/back-desktop.jpg");
+    background-size: 1200px auto;
+    height: 516px;
+
+    @include resolution {
+      background-image: url("../img/decorative/back-desktop@2x.jpg");
+      background-size: 1200px auto;
     }
+  }
+}
+
+.main__welcome-block--small {
+  @include tablet {
+    height: 290px;
   }
 }
 
 .main__welcome-img {
   width: 100%;
+
+  @include tablet {
+    height: 350px;
+  }
 }
 
 .main__welcome-block::after {
@@ -34,7 +56,7 @@
   height: 58px;
   background-repeat: no-repeat;
   background-position: bottom;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   background-color: #ffffff00;
 }
@@ -61,6 +83,17 @@
   left: 50%;
   background-color: #ffffff00;
   transform: translateX(-50%);
+
+  @include tablet {
+    background-image: url("../img/decorative/SEDONA-tablet.svg");
+    height: 78px;
+    top: 34%;
+  }
+
+  @include desktop{
+    background-image: url("../img/decorative/SEDONA-desktop.svg");
+    height: 80px;
+  }
 }
 
 .main__welcome-block--small::after {
