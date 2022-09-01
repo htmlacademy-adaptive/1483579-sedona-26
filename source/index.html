@@ -36,6 +36,9 @@
       <symbol id="youtube" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z" fill="#fff"/>
       </symbol>
+      <symbol id="html-logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
+      </symbol>
     </svg>
 
     <div class="container">
@@ -88,7 +91,7 @@
           <ol class="advantages__list">
             <li class="advantages__item advantages__item--colored-dark row-1">
               <div class="advantages__item--wrapper">
-                <div class="content content--whith-photo">
+                <div class="content content--whith-photo content--index-paddings">
                   <h3 class="content__title content__title--colored">Настоящий городок</h3>
                   <p class="content__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
                 </div>
@@ -191,7 +194,10 @@
         <div class="general-footer__copyright copyright">
           <a class="copyright__link" href="">
             <span class="copyright__text">Разработано</span>
-            <img class="copyright__logo" src="img/content/htmlacademy-logo-footer.svg" width="" height="" alt="Логотип HTML Academy.">
+            <svg class="copyright__logo">
+              <use href="#html-logo"></use>
+            </svg>
+            <!--img src="img/content/htmlacademy-logo-footer.svg" width="" height="" alt="Логотип HTML Academy."-->
           </a>
         </div>
       </footer>
