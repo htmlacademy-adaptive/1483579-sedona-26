@@ -497,11 +497,6 @@ html {
   height: 158px;
   background-position: bottom;
 }
-@media screen and (min-width: 768px) {
-  .main__welcome-block--small {
-    height: 290px;
-  }
-}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main__welcome-block {
     background-image: url("../img/decorative/back-mobile@2x.jpg");
@@ -512,6 +507,7 @@ html {
   .main__welcome-block {
     background-image: url("../img/decorative/back-desktop.jpg");
     background-size: 1200px auto;
+    height: 516px;
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -521,8 +517,19 @@ html {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .main__welcome-block--small {
+    height: 290px;
+  }
+}
+
 .main__welcome-img {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main__welcome-img {
+    height: 350px;
+  }
 }
 
 .main__welcome-block::after {
@@ -561,6 +568,19 @@ html {
   left: 50%;
   background-color: #ffffff00;
   transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .main__welcome-block--small::before {
+    background-image: url("../img/decorative/SEDONA-tablet.svg");
+    height: 78px;
+    top: 34%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__welcome-block--small::before {
+    background-image: url("../img/decorative/SEDONA-desktop.svg");
+    height: 80px;
+  }
 }
 
 .main__welcome-block--small::after {
@@ -678,7 +698,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .form__row {
-    margin-bottom: 76px;
+    margin-bottom: 8px;
   }
 }
 
@@ -820,7 +840,7 @@ html {
 
 .form__input-controls[type=checkbox]:checked + .form__control-mark::before {
   content: "";
-  background-image: url("../../img/decorative/tick-icon.svg");
+  background-image: url("../img/decorative/tick-icon.svg");
   width: 24px;
   height: 18px;
   position: absolute;
@@ -871,7 +891,7 @@ html {
     position: absolute;
     display: block;
     background-color: #e6e6e6;
-    background-image: url("../../img/decorative/icon-phone.svg");
+    background-image: url("../img/decorative/icon-phone.svg");
     width: 58px;
     height: 58px;
     background-position: center;
@@ -892,7 +912,7 @@ html {
     position: absolute;
     display: block;
     background-color: #e6e6e6;
-    background-image: url("../../img/decorative/icon-mail.svg");
+    background-image: url("../img/decorative/icon-mail.svg");
     width: 58px;
     height: 58px;
     background-position: center;
@@ -945,30 +965,26 @@ html {
   }
 }
 
-/*.form__container--radio {
-  @include tablet {
-    margin: 0 96px;
+@media screen and (min-width: 1200px) {
+  .form__container--radio,
+.form__container--checkbox {
+    margin-bottom: 56px;
   }
 }
 
-.form__container--checkbox {
-  @include tablet {
-    margin: 0 144px;
-  }
-}*/
 .form-wrapper {
   padding: 24px 20px 39px;
   margin: 0;
+  /*@include desktop {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }*/
 }
 @media screen and (min-width: 768px) {
   .form-wrapper {
     padding: 0;
     padding-bottom: 48px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form-wrapper {
-    padding: 0;
   }
 }
 
