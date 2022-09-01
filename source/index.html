@@ -11,10 +11,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
+
+<!--SVG SPRITE-->
+    <svg style="display: none;">
+      <symbol id="menu-open" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/>
+      </symbol>
+      <symbol id="menu-close" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/>
+      </symbol>
+      <symbol id="vk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#a)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" fill="#fff"/>
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 0h24v24H0z"/>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="telegram" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z" fill="#fff"/>
+      </symbol>
+      <symbol id="youtube" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z" fill="#fff"/>
+      </symbol>
+    </svg>
+
     <div class="container">
       <header class="general-header">
-        <button class="general-header__toggle toggle toggle__open" type="button" onclick="document.querySelector('.navigation__list').classList.remove('navigation__list--closed')">
+        <button class="general-header__toggle toggle" type="button" onclick="document.querySelector('.navigation__list').classList.remove('navigation__list--closed')">
           <span class="visually-hidden">Открыть меню</span>
+          <svg class="toggle__open">
+            <use href="#menu-open"></use>
+          </svg>
         </button>
         <a class="general-header__logo" href="index.html">
           <img class="general-header__logo-image" src="img/content/logo-header.svg" width="185" height="96" alt="Логотип Седона.">
@@ -23,8 +53,11 @@
           <ul class="navigation__list navigation__list--opened navigation__list--closed">
             <li class="navigation__item main-page">
               <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
-              <button class="navigation__toggle toggle toggle__close" type="button" onclick="document.querySelector('.navigation__list').classList.add('navigation__list--closed')">
+              <button class="navigation__toggle toggle toggle-position" type="button" onclick="document.querySelector('.navigation__list').classList.add('navigation__list--closed')">
                 <span class="visually-hidden">Кнопка закрыть</span>
+                <svg class="toggle__close">
+                  <use href="#menu-close"></use>
+                </svg>
               </button>
             </li>
             <li class="navigation__item">
@@ -111,7 +144,7 @@
         </section>
         <a class="main__button button button--colored" href="#">Найти Гостиницу</a>
         <div class="location">
-          <iframe class="location__image" src="https://yandex.ru/map-widget/v1/-/CCUR7GERLD" width="320" height="350" frameborder="1" allowfullscreen="true" title="Расположение Седоны на карте"></iframe>
+          <iframe class="location__image" src="https://yandex.ru/map-widget/v1/-/CCUR7GERLD" width="320" height="350" allowfullscreen title="Расположение Седоны на карте"></iframe>
           <!--<img class="location__image" src="img/content/map-mobile.jpg" width="" height="" alt="Карта с уканазием расположения Седоны.">-->
         </div>
       </main>
@@ -125,28 +158,31 @@
             <li class="social__item">
               <a class="social__link icon-wrapper" href="#" aria-label="Мы в Вконтакте">
                 <svg class="social__icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#a)">
+                  <!--g clip-path="url(#a)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"/>
                   </g>
                   <defs>
                     <clipPath id="a">
                       <path fill="#fff" d="M0 0h24v24H0z"/>
                     </clipPath>
-                  </defs>
+                  </defs-->
+                  <use href="#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link icon-wrapper" href="#" aria-label="Мы в Телеграме">
                 <svg class="social__icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"/>
+                  <!--path d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"/-->
+                  <use href="#telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link icon-wrapper" href="#" aria-label="Мы в Ютубе">
                 <svg class="social__icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"/>
+                  <!--path d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"/-->
+                  <use href="#youtube"></use>
                 </svg>
               </a>
             </li>
