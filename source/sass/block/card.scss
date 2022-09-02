@@ -48,10 +48,6 @@
   @include tablet {
     display: block;
   }
-
-  @include desktop {
-    color: #fff;
-  }
 }
 
 .card__like-numb {
@@ -62,26 +58,24 @@
 
 .card__likes {
   font-weight: 700;
+  display: flex;
+  gap: 14px;
+  align-items: center;
 
   @include tablet {
-    display: flex;
-    justify-content: space-between;
     min-width: 60px;
-    align-items: center;
     gap: 8px;
-  }
-
-  @include desktop {
-    color: #fff;
   }
 }
 
 .card__like-icon {
   width: 23px;
   height: 21px;
+  opacity: 0.3;
 
   @include desktop {
-    fill: #fff;
+    fill: $text-color-lighten;
+    opacity: 1;
   }
 }
 
