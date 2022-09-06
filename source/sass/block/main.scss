@@ -12,11 +12,6 @@
   box-sizing: border-box;
   position: relative;
 
-  &--small {
-    height: 158px;
-    background-position: bottom;
-  }
-
   @include resolution {
     background-image: url("../img/decorative/back-mobile@2x.jpg");
     background-size: 900px auto;
@@ -35,6 +30,9 @@
 }
 
 .main__welcome-block--small {
+  height: 158px;
+  background-position: bottom;
+
   @include tablet {
     height: 290px;
   }
@@ -90,7 +88,7 @@
     top: 34%;
   }
 
-  @include desktop{
+  @include desktop {
     background-image: url("../img/decorative/SEDONA-desktop.svg");
     height: 80px;
   }
