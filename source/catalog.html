@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Галерея</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-32.svg">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -131,11 +131,23 @@
           <p class="hero__text hero__text--catalog">Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они
             не&nbsp;подорожали в&nbsp;очередной раз!</p>
         </section>
-        <div class="video"><video class="video__image" poster="img/content/video-preview.jpg" width="280"
-            height="177"></video><button class="video__toggle" type="button"><span class="visually-hidden">Запуск</span>
+        <div class="video">
+          <!--video class="video__image" poster="img/content/video-preview.jpg" width="280"
+            height="177"></!--video-->
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/content/video-desktop.jpg, img/content/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/video-tablet.jpg, img/content/video-tablet@2x.jpg 2x">
+            <img class="video__image" src="img/content/video-preview.jpg" srcset="img/content/video-preview@2x.jpg" width="280" height="177" alt="Видео превью: дорога на пути в Седону.">
+          </picture>
+          <button class="video__toggle" type="button">
+            <span class="visually-hidden">Запуск</span>
             <svg class="video__toggle-play">
               <use href="./img/sprite.svg#play"></use>
-            </svg></button></div>
+            </svg>
+          </button>
+        </div>
       </div>
     </main>
     <footer class="general-footer"><a class="general-footer__tag" href="#"><span>#visitSEDONA</span></a>

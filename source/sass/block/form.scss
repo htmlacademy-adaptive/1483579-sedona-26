@@ -294,3 +294,9 @@
     margin-bottom: 56px;
   }
 }
+
+.form__title--big {
+  @include desktop {
+    max-width: 450px;
+  }
+}

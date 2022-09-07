@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Форма отзыва</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-32.svg">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -46,7 +46,7 @@
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="form__row">
           <fieldset class="form__container form-wrapper">
-            <legend class="form__title">Представьтесь:</legend><label class="form__label" for="name">Имя*:</label>
+            <legend class="form__title form__title--big">Представьтесь:</legend><label class="form__label" for="name">Имя*:</label>
             <input class="form__input input-container form__input--initials" type="text" id="name" placeholder="Пётр"
               name="name" required> <label class="form__label" for="surname">Фамилия*:</label> <input
               class="form__input input-container form__input--initials" type="text" id="surname" placeholder="Пустота"
@@ -55,7 +55,7 @@
               placeholder="Викторович" name="patronymic">
           </fieldset>
           <fieldset class="form__container form-wrapper">
-            <legend class="form__title">Контактная информация:</legend><label class="form__label form__label--phone"
+            <legend class="form__title form__title--big">Контактная информация:</legend><label class="form__label form__label--phone"
               for="phone">Контактный телефон*:</label> <input class="form__input input-container input-container--icon"
               type="text" id="phone" placeholder="Введите телефон" name="phone" required> <label
               class="form__label form__label--email" for="e-mail">Электронная почта*:</label> <input
@@ -130,6 +130,7 @@
         <p class="hero__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div><button class="button button--colored button--modal-error" type="button">Ок</button>
     </div>
+    <>
     <div class="modal-container modal-container--submitted">
       <div class="hero hero--modal-submitted">
         <h2 class="hero__title">Ваш отзыв отправлен!</h2>
