@@ -1,34 +1,38 @@
 .video {
   margin: 0 auto;
-
-  @include tablet {
-    position: relative;
-  }
+  position: relative;
 }
 
 .video__image {
   display: block;
   text-align: center;
   margin: 0 auto;
+
+  @include tablet {
+    width: 648px;
+    height: 500px;
+  }
+
+  @include desktop {
+    max-height: 500px;
+    width: 800px;
+    height: 500px;
+  }
 }
 
 .video__toggle {
   position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 27px solid transparent;
-  border-left: 38px solid rgba(255, 255, 255, 0.7);
-  border-bottom: 27px solid transparent;
-  background-color: transparent;
-  border-right: none;
-  top: 58%;
-  left: 54%;
-  transform: translate(-50%, 60%);
+  width: 48px;
+  height: 54px;
   cursor: pointer;
+  top: 50%;
+  border: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
 
-  @include tablet {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.video__toggle-play {
+  width: 48px;
+  height: 54px;
 }

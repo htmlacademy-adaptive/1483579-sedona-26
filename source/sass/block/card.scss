@@ -41,13 +41,16 @@
   text-transform: none;
 }
 
-.card__like-icon {
+.card__like {
+  border: none;
+  background-color: transparent;
+
   @include tablet {
     display: block;
   }
 }
 
-.card__like {
+.card__like-numb {
   @include tablet {
     display: block;
   }
@@ -55,13 +58,24 @@
 
 .card__likes {
   font-weight: 700;
+  display: flex;
+  gap: 14px;
+  align-items: center;
 
   @include tablet {
-    display: flex;
-    justify-content: space-between;
     min-width: 60px;
-    align-items: center;
     gap: 8px;
+  }
+}
+
+.card__like-icon {
+  width: 23px;
+  height: 21px;
+  opacity: 0.3;
+
+  @include desktop {
+    fill: $text-color-lighten;
+    opacity: 1;
   }
 }
 

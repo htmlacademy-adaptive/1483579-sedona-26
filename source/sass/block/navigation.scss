@@ -59,9 +59,10 @@
   }
 }
 
-/*.navigation__list--opened {
-  display: block;
-}*/
+.navigation__toggle {
+  position: relative;
+  background-color: $background-color-secondary;
+}
 
 
 .navigation__list--closed {

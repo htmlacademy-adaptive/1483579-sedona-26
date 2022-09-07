@@ -5,17 +5,12 @@
 .main__welcome-block {
   background-image: url("../img/decorative/back-mobile.jpg");
   background-color: $background-color-secondary;
-  height: 390px;
+  height: 388px;
   background-repeat: no-repeat;
   background-position: center;
   padding: 90px 19px 85px;
   box-sizing: border-box;
   position: relative;
-
-  &--small {
-    height: 158px;
-    background-position: bottom;
-  }
 
   @include resolution {
     background-image: url("../img/decorative/back-mobile@2x.jpg");
@@ -35,6 +30,9 @@
 }
 
 .main__welcome-block--small {
+  height: 158px;
+  background-position: bottom;
+
   @include tablet {
     height: 290px;
   }
@@ -90,7 +88,7 @@
     top: 34%;
   }
 
-  @include desktop{
+  @include desktop {
     background-image: url("../img/decorative/SEDONA-desktop.svg");
     height: 80px;
   }

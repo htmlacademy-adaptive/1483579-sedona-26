@@ -8,6 +8,8 @@
 
 .general-header__toggle {
   margin: 16px;
+  position: relative;
+  background-color: $background-color-primary;
 }
 
 .general-header__logo-image {

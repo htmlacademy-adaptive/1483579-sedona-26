@@ -5,6 +5,9 @@
 .copyright__link {
   color: $text-color-primary;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
@@ -14,4 +17,6 @@
 
 .copyright__logo {
   vertical-align: middle;
+  width: 27px;
+  height: 35px;
 }
