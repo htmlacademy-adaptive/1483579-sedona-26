@@ -27,20 +27,6 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// Server
-
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'build'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
 // HTML
 
 export const html = () => {
@@ -108,17 +94,62 @@ export const copy = () => {
 //Clean
 
 export const clean = () => {
-  return {deleteAsync}('build');
+  return deleteAsync('build');
+}
+
+// Server
+
+const server = (done) => {
+  browser.init({
+    server: {
+      baseDir: 'build'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
+
+//Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
 }
 
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
+  //gulp.watch('source/*.html').on('change', browser.reload);
+
 }
 
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    svg,
+    sprite,
+    createWebp
+  ),);
 
 export default gulp.series(
-  html, styles, server, watcher
-);
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    svg,
+    sprite,
+    createWebp
+  ),gulp.series(
+    server,
+    watcher
+    ));
