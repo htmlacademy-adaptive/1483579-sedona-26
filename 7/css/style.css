@@ -1018,6 +1018,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form__title--big {
+    max-width: 450px;
+  }
+}
+
 .form-wrapper {
   padding: 24px 20px 39px;
   margin: 0;
@@ -1431,7 +1437,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .video-card {
-    padding: 16px 60px 40px;
+    padding: 16px 60px 24px;
   }
 }
 
@@ -1444,6 +1450,19 @@ html {
   display: block;
   text-align: center;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .video__image {
+    width: 648px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video__image {
+    max-height: 500px;
+    width: 800px;
+    height: 500px;
+  }
 }
 
 .video__toggle {
