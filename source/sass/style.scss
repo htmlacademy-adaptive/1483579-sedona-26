@@ -26,7 +26,4 @@
 @import "./block/toggle.scss";
 @import "./block/video-card.scss";
 @import "./block/video.scss";
-
-.visually-hidden {
-  @include visually-hidden;
-}
+@import "./block/modal-wrapper.scss";

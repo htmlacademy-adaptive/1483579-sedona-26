@@ -7,3 +7,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+.visually-hidden {
+  @include visually-hidden;
+}

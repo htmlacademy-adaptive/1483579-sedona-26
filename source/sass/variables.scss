@@ -5,6 +5,12 @@ $text-current-page-color: #766357;
 
 $background-color-primary: #ffffff;
 $background-color-secondary: #81b3d3;
+$background-color-hover: #669ec0;
+$background-color-active: #5496bd;
+$background-color-logo-active: #b3b3b3;
+
+
+$background-modal: #0000004d;
 $lines-background-color: #e5e5e5;
 
 $icons-background-color: #ffffff00;
@@ -15,6 +21,7 @@ $items-background-color: #eeeeee;
 
 $opacity-primary-color: rgba($text-color-primary, 30%);
 $opacity-secondary-color: rgba($text-color-secondary, 30%);
+$opacity-color-lighten: rgba($text-color-lighten, 30%);
 
 $table-width: 768px;
 $desktop-width: 1200px;

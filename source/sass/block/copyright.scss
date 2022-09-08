@@ -8,6 +8,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    color: $background-color-secondary;
+  }
+
+  &:hover .copyright__logo{
+    fill: $background-color-secondary;
+  }
+
+  &:active {
+    color: $background-color-logo-active;
+  }
+
+  &:active .copyright__logo{
+    fill: $background-color-logo-active;
+  }
 }
 
 .copyright__text {

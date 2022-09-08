@@ -17,6 +17,19 @@
   border: none;
   text-align: center;
 
+  &:hover {
+    background-color: $background-color-hover;
+  }
+
+  &:active {
+    background-color: $background-color-active;
+    color: $opacity-color-lighten;
+  }
+
+  &:disabled {
+    background-color: $lines-background-color;
+  }
+
   @include tablet {
     min-width: 458px;
   }

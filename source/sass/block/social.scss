@@ -16,12 +16,28 @@
 .social__link {
   display: block;
   text-align: center;
+
+  &:hover {
+    background-color: $background-color-hover;
+  }
+
+  &:active {
+    background-color: $background-color-active;
+
+  }
+
+  &:active .social__icon {
+    background-color: $background-color-active;
+    fill: $opacity-color-lighten;
+  }
 }
 
 .icon-wrapper {
   padding: 11px;
+  max-height: 48px;
 }
 
 .social__icon {
   fill: $text-color-lighten;
+  width: 100%;
 }
