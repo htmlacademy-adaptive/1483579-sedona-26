@@ -14,7 +14,7 @@
 
   @include resolution {
     background-image: url("../img/decorative/back-mobile@2x.jpg");
-    background-size: 900px auto;
+    background-size: auto;
   }
 
   @include tablet {
