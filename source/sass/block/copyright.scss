@@ -13,7 +13,7 @@
     color: $background-color-secondary;
   }
 
-  &:hover .copyright__logo{
+  &:hover .copyright__logo {
     fill: $background-color-secondary;
   }
 
@@ -21,7 +21,7 @@
     color: $background-color-logo-active;
   }
 
-  &:active .copyright__logo{
+  &:active .copyright__logo {
     fill: $background-color-logo-active;
   }
 }
