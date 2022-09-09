@@ -24,6 +24,18 @@
   background-color: $background-color-secondary;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+  &:hover {
+    background-color: $background-color-hover;
+  }
+
+  &:active {
+    background-color: $background-color-active;
+  }
+
+  &:active .navigation__link {
+    color: $opacity-color-lighten;
+  }
+
   @include tablet {
     max-width: 21%;
     background-color: $background-color-primary;
@@ -32,6 +44,22 @@
 
     &:nth-child(2) {
       margin-right: 16%;
+    }
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &:hover .navigation__link {
+      color: $background-color-secondary;
+    }
+
+    &:active {
+      background-color: inherit;
+    }
+
+    &:active .navigation__link {
+      color: $opacity-primary-color;
     }
   }
 }
@@ -61,7 +89,7 @@
 
 .navigation__toggle {
   position: relative;
-  background-color: $background-color-secondary;
+  background-color: inherit;
 }
 
 

@@ -1,10 +1,25 @@
 .toggle {
-
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+
+  &:hover .toggle__close {
+    opacity: 0.6;
+  }
+
+  &:hover .toggle__open {
+    opacity: 0.6;
+  }
+
+  &:active .toggle__close {
+    opacity: 0.3;
+  }
+
+  &:active .toggle__open {
+    opacity: 0.3;
+  }
 
   @include tablet {
     display: none;

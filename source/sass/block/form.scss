@@ -91,9 +91,25 @@
   width: 100%;
   height: 58px;
   background-color: $inputs-background-color;
-  border: none;
+  border: $inputs-background-color 4px solid;
 
   @include form-text;
+
+  &:hover {
+    background-color: $lines-background-color;
+    border: $lines-background-color 4px solid;
+  }
+
+  &:active {
+    background-color: $background-color-primary;
+    border: #e5e5e5 4px solid;
+  }
+
+  &:focus-visible {
+    background-color: $background-color-primary;
+    border: #e5e5e5 4px solid;
+    outline: none;
+  }
 }
 
 .form__input:not(:last-child),
@@ -148,6 +164,14 @@
   height: 46px;
   background-color: $inputs-background-color;
   border-radius: 50%;
+
+  &:hover {
+    background-color: $lines-background-color;
+  }
+
+  &:active {
+    background-color: $background-color-radio-active;
+  }
 }
 
 .form__input-controls[type="radio"]:checked + .form__control-mark::before {
@@ -300,3 +324,8 @@
     max-width: 450px;
   }
 }
+
+
+.form__input-controls[type="radio"]:checked + .form__control-mark::before:active {
+    background-color: $opacity-secondary-color;
+  }
