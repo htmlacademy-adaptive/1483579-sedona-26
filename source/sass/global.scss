@@ -11,3 +11,11 @@ html {
 .visually-hidden {
   @include visually-hidden;
 }
+
+br {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}

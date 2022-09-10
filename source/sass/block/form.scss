@@ -137,13 +137,37 @@
 
   @include form-text;
 
+  &--radio {
+    &:hover .form__control-mark {
+      background-color: $lines-background-color;
+    }
+
+    &:active .form__control-mark {
+      background-color: $background-color-radio-active;
+    }
+
+    &:active .form__control-mark {
+      background-color: $background-color-radio-active;
+    }
+  }
+
+  &--checkbox {
+    &:hover .form__control-mark {
+      background-color: $lines-background-color;
+    }
+
+    &:active .form__control-mark {
+      background-color: $background-color-radio-active;
+    }
+
+    &:active .form__control-mark {
+      background-color: $background-color-radio-active;
+    }
+  }
+
   @include tablet {
     margin-right: 16px;
     min-width: 224px;
-
-    &--radio {
-      margin-right: 50px;
-    }
   }
 }
 
@@ -165,13 +189,7 @@
   background-color: $inputs-background-color;
   border-radius: 50%;
 
-  &:hover {
-    background-color: $lines-background-color;
-  }
 
-  &:active {
-    background-color: $background-color-radio-active;
-  }
 }
 
 .form__input-controls[type="radio"]:checked + .form__control-mark::before {
@@ -200,6 +218,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 .form__button {
   display: block;

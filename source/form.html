@@ -79,14 +79,14 @@
           <legend class="form__title"><span class="form__title-wrapper">Посещенные достопримечательности:</span>
           </legend>
           <div class="form__feedback-content form__feedback-content--paddings"><label
-              class="form__label-controls form__label-checkbox"><input class="form__input-controls" type="checkbox"
+              class="form__label-controls form__label-controls--checkbox"><input class="form__input-controls" type="checkbox"
                 name="bridge" checked="checked"> <span class="form__control-mark form__control-mark--checkbox"></span>
-              Мост Дьявола</label> <label class="form__label-controls form__label-checkbox"><input
+              Мост Дьявола</label> <label class="form__label-controls form__label-controls--checkbox"><input
                 class="form__input-controls" type="checkbox" name="mountain" checked="checked"> <span
                 class="form__control-mark form__control-mark--checkbox"></span> Гора-Колокол</label> <label
-              class="form__label-controls form__label-checkbox"><input class="form__input-controls" type="checkbox"
+              class="form__label-controls form__label-controls--checkbox"><input class="form__input-controls" type="checkbox"
                 name="park" checked="checked"> <span class="form__control-mark form__control-mark--checkbox"></span>
-              Слайд-парк</label> <label class="form__label-controls form__label-checkbox"><input
+              Слайд-парк</label> <label class="form__label-controls form__label-controls--checkbox"><input
                 class="form__input-controls" type="checkbox" name="rocks"> <span
                 class="form__control-mark form__control-mark--checkbox"></span> Красные скалы</label></div>
         </fieldset>
@@ -125,7 +125,7 @@
               <use href="./img/sprite.svg#htmlacademy"></use>
           </svg></a></div>
     </footer>
-    <div class="modal-wrapper modal-wrapper--error">
+    <div class="modal-wrapper modal-wrapper--opened"> <!--Класс modal-wrapper--opened для отображения модального окна, присваевается в зависимости от необходимости открытия.-->
       <div class="modal-container modal-container--error">
         <div class="hero hero--modal-error">
           <h2 class="hero__title">Что-то пошло не так!</h2>
@@ -133,7 +133,7 @@
         </div><button class="button button--colored button--modal-error" type="button">Ок</button>
       </div>
     </div>
-    <div class="modal-wrapper modal-wrapper--submitted">
+    <div class="modal-wrapper">
       <div class="modal-container modal-container--submitted">
         <div class="hero hero--modal-submitted">
           <h2 class="hero__title">Ваш отзыв отправлен!</h2>

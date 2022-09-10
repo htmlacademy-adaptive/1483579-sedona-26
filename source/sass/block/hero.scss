@@ -1,14 +1,18 @@
 .hero {
   position: relative;
-  padding: 32px 19px 24px;
+  padding: 35px 19px 24px;
 
   @include tablet {
-    padding: 46px 0 54px;
+    padding: 52px 0 55px;
 
     &--welcome {
       max-width: 520px;
       margin: 0 auto;
     }
+  }
+
+  @include desktop {
+    padding: 61px 0px 46px;
   }
 }
 
@@ -20,7 +24,7 @@
   height: 38px;
   background-repeat: no-repeat;
   background-position: bottom;
-  bottom: -16px;
+  bottom: -28px;
   left: 0;
   background-color: #ffffff00;
   z-index: 1;
@@ -40,6 +44,7 @@
 
   @include tablet {
     font-size: 21px;
+    margin-bottom: 28px;
 
     &--catalog {
       font-size: 30px;
@@ -77,15 +82,19 @@
   @include tablet {
     padding: 60px 166px 40px;
   }
+
+  @include desktop {
+    padding: 60px 166px 44px;
+  }
 }
 
 .hero__title--intersted {
   font-size: 21px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @include tablet {
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 }
 

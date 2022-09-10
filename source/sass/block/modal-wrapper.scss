@@ -1,4 +1,4 @@
-.modal-wrapper--error {
+.modal-wrapper{
   position: fixed;
   top: 0;
   left: 0;
@@ -6,18 +6,9 @@
   height: 100%;
   background-color: $background-modal;
   z-index: 2;
-
   display: none;
 }
 
-.modal-wrapper--submitted {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $background-modal;
-  z-index: 2;
-
-  display: none;
+.modal-wrapper--opened {
+  display: block;
 }
