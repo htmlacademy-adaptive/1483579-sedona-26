@@ -32,9 +32,14 @@
 .main__welcome-block--small {
   height: 158px;
   background-position: bottom;
+  padding: 66px 19px 85px;
 
   @include tablet {
     height: 290px;
+  }
+
+  @include desktop{
+    height: 300px;
   }
 }
 
@@ -89,20 +94,21 @@
   height: 58px;
   background-repeat: no-repeat;
   background-position: center;
-  top: 68px;
+  top: 44%;
   left: 50%;
   background-color: #ffffff00;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   @include tablet {
     background-image: url("../img/decorative/SEDONA-tablet.svg");
     height: 78px;
-    top: 34%;
+    top: 46%;
   }
 
   @include desktop {
     background-image: url("../img/decorative/SEDONA-desktop.svg");
     height: 80px;
+    top: 47%;
   }
 }
 
@@ -114,12 +120,12 @@
   height: 58px;
   background-repeat: no-repeat;
   background-position: bottom;
-  top: 118px;
+  bottom: 0;
   left: 0;
   background-color: #ffffff00;
 
   @include tablet {
-    top: 232px;
+    bottom: 0;
   }
 }
 

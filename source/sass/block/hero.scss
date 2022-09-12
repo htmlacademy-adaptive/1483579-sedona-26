@@ -36,7 +36,7 @@
 
 .hero__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
@@ -108,23 +108,27 @@
 .hero--modal-error {
   padding: 0;
   margin-bottom: 28px;
+
+  @include tablet {
+    margin-bottom: 47px;
+  }
 }
 
 .hero--modal-submitted {
-  padding: 38px;
+  padding: 41px;
 
   @include tablet {
-    padding: 53px 98px 34px;
+    padding: 45px 98px 49px;
   }
 }
 
 .hero--form {
   @include tablet {
-    padding: 64px 166px 102px;
+    padding: 67px 166px 107px;
   }
 
   @include desktop {
-    padding: 115px 382px 67px;
+    padding: 115px 382px 70px;
   }
 }
 
@@ -142,5 +146,18 @@
   @include tablet {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+
+  @include desktop{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.hero__title--modal {
+  @include tablet {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 24px;
   }
 }

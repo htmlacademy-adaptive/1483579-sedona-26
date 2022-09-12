@@ -7,7 +7,7 @@
   text-decoration: none;
   color: $text-color-lighten;
   text-transform: uppercase;
-  padding: 16px;
+  padding: 18px;
 }
 
 .button--colored {
@@ -36,7 +36,7 @@
 }
 
 .button--modal-error {
-  width: 100%;
+  min-width: 180px;
   height: 58px;
 
   @include tablet {
@@ -56,5 +56,6 @@
 
   @include tablet {
     min-width: 458px;
+    font-size: 21px;
   }
 }
