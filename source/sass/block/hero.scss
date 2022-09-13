@@ -1,13 +1,29 @@
 .hero {
   position: relative;
-  padding: 32px 19px 24px;
+  padding: 35px 19px 24px;
+
+  &--video {
+    padding: 17px 19px 39px;
+  }
 
   @include tablet {
-    padding: 46px 0 54px;
+    padding: 52px 0 55px;
 
     &--welcome {
       max-width: 520px;
       margin: 0 auto;
+    }
+
+    &--video {
+      padding: 39px 0 89px;
+    }
+  }
+
+  @include desktop {
+    padding: 61px 0 46px;
+
+    &--video {
+      padding: 42px 19px 86px;
     }
   }
 }
@@ -20,7 +36,7 @@
   height: 38px;
   background-repeat: no-repeat;
   background-position: bottom;
-  bottom: -16px;
+  bottom: -28px;
   left: 0;
   background-color: #ffffff00;
   z-index: 1;
@@ -32,14 +48,19 @@
 
 .hero__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 
+  &--index {
+    margin: 0 0 34px;
+  }
+
   @include tablet {
     font-size: 21px;
+    margin-bottom: 28px;
 
     &--catalog {
       font-size: 30px;
@@ -75,23 +96,27 @@
   padding: 38px 18px 32px;
 
   @include tablet {
-    padding: 60px 166px 40px;
+    padding: 59px 164px 36px;
+  }
+
+  @include desktop {
+    padding: 62px 163px 41px;
   }
 }
 
 .hero__title--intersted {
   font-size: 21px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @include tablet {
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 }
 
 .hero__text--intersted {
   @include desktop {
-    width: 434px;
+    width: 436px;
     margin: 0 auto;
   }
 }
@@ -99,33 +124,39 @@
 .hero--modal-error {
   padding: 0;
   margin-bottom: 28px;
+
+  @include tablet {
+    margin-bottom: 47px;
+  }
 }
 
 .hero--modal-submitted {
-  padding: 38px;
+  padding: 41px;
 
   @include tablet {
-    padding: 53px 98px 34px;
+    padding: 45px 98px 49px;
   }
 }
 
 .hero--form {
   @include tablet {
-    padding: 64px 166px 102px;
+    padding: 67px 166px 107px;
   }
 
   @include desktop {
-    padding: 115px 382px 67px;
+    padding: 115px 382px 70px;
   }
 }
 
 .hero--catalog {
+  padding: 35px 19px 36px;
+
   @include tablet {
-    padding: 66px 155px 66px;
+    padding: 66px 155px 80px;
   }
 
   @include desktop {
-    padding: 100px 370px 66px;
+    padding: 100px 370px 87px;
   }
 }
 
@@ -133,5 +164,24 @@
   @include tablet {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.hero__title--modal {
+  @include tablet {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+.hero__title--catalog {
+  @include tablet {
+    margin-bottom: 33px;
   }
 }

@@ -3,14 +3,20 @@
 }
 
 .description-list__item {
-  padding: 8px 5px 0 47px;
+  padding: 10px 0 0 44px;
   position: relative;
   margin-bottom: 22px;
 
   @include tablet {
     box-sizing: border-box;
     width: 33%;
-    padding: 156px 36px 58px;
+    padding: 156px 36px 37px;
+  }
+
+  @include desktop {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 156px 48px 37px;
   }
 }
 
@@ -20,20 +26,34 @@
 
 .description-list__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
   font-weight: 700;
+  font-size: 18px;
 
   @include tablet {
     text-align: center;
     font-size: 21px;
+    margin-bottom: 28px;
   }
 }
 
 .description-list__text {
-  margin: 0;
+  margin: -1px 0;
 
   @include tablet {
     text-align: center;
+  }
+
+  &--position {
+    width: 200px;
+
+    @include tablet {
+      width: 192px;
+    }
+
+    @include desktop {
+      min-width: 310px;
+    }
   }
 }
 
@@ -44,15 +64,19 @@
   height: 38px;
   background-repeat: no-repeat;
   left: 0;
-  top: 15%;
+  top: 20%;
   transform: translateY(-50%);
   background-position: center;
 
   @include tablet {
-    top: 52px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.description-list__item--food {
+  margin-left: 4px;
 }
 
 .description-list__item--living::before {
@@ -74,6 +98,10 @@
     width: 76px;
     height: 68px;
   }
+
+  @include desktop {
+    height: 77px;
+  }
 }
 
 .description-list__item--gifts::before {
@@ -83,5 +111,10 @@
     background-image: url("../img/decorative/icon-gift-big.svg");
     width: 64px;
     height: 75px;
+  }
+
+  @include desktop {
+    height: 73px;
+    left: 51%;
   }
 }

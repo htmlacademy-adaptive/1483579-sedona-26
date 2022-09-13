@@ -7,7 +7,7 @@
   text-decoration: none;
   color: $text-color-lighten;
   text-transform: uppercase;
-  padding: 16px;
+  padding: 18px;
 }
 
 .button--colored {
@@ -17,13 +17,26 @@
   border: none;
   text-align: center;
 
+  &:hover {
+    background-color: $background-color-hover;
+  }
+
+  &:active {
+    background-color: $background-color-active;
+    color: $opacity-color-lighten;
+  }
+
+  &:disabled {
+    background-color: $lines-background-color;
+  }
+
   @include tablet {
     min-width: 458px;
   }
 }
 
 .button--modal-error {
-  width: 100%;
+  min-width: 180px;
   height: 58px;
 
   @include tablet {
@@ -43,5 +56,6 @@
 
   @include tablet {
     min-width: 458px;
+    font-size: 21px;
   }
 }

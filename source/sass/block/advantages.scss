@@ -22,6 +22,10 @@
     flex-wrap: wrap;
     padding: 0;
   }
+
+  @include desktop {
+    padding: 0 0 20px;
+  }
 }
 
 .advantages__image {
@@ -30,7 +34,7 @@
   @include tablet {
     width: 100%;
     object-fit: cover;
-    min-height: 103%;
+    min-height: 102%;
   }
 }
 

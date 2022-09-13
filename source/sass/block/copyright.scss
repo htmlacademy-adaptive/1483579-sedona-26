@@ -8,15 +8,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    color: $background-color-secondary;
+  }
+
+  &:hover .copyright__logo {
+    fill: $background-color-secondary;
+  }
+
+  &:active {
+    color: $background-color-logo-active;
+  }
+
+  &:active .copyright__logo {
+    fill: $background-color-logo-active;
+  }
 }
 
 .copyright__text {
   vertical-align: middle;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .copyright__logo {
   vertical-align: middle;
-  width: 27px;
+  width: 36px;
   height: 35px;
 }

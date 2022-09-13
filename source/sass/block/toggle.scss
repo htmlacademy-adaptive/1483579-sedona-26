@@ -1,10 +1,26 @@
 .toggle {
-
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  margin-right: 19px;
+
+  &:hover .toggle__close {
+    opacity: 0.6;
+  }
+
+  &:hover .toggle__open {
+    opacity: 0.6;
+  }
+
+  &:active .toggle__close {
+    opacity: 0.3;
+  }
+
+  &:active .toggle__open {
+    opacity: 0.3;
+  }
 
   @include tablet {
     display: none;
@@ -33,5 +49,5 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin-right: 20px;
+  margin-right: 24px;
 }

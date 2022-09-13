@@ -1,6 +1,6 @@
 .navigation {
   @include tablet {
-    padding: 18px;
+    padding: 19px;
   }
 }
 
@@ -20,18 +20,54 @@
   width: 100%;
   max-height: 55px;
   text-align: center;
-  padding: 14px 50px;
+  padding: 19px 50px;
   background-color: $background-color-secondary;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+  &:hover {
+    background-color: $background-color-hover;
+  }
+
+  &:active {
+    background-color: $background-color-active;
+  }
+
+  &:active .navigation__link {
+    color: $opacity-color-lighten;
+  }
+
   @include tablet {
-    max-width: 21%;
+    max-width: 16%;
     background-color: $background-color-primary;
     box-shadow: none;
     padding: 0;
 
     &:nth-child(2) {
-      margin-right: 16%;
+      margin-right: 21%;
+    }
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &:hover .navigation__link {
+      color: $background-color-secondary;
+    }
+
+    &:active {
+      background-color: inherit;
+    }
+
+    &:active .navigation__link {
+      color: $opacity-primary-color;
+    }
+  }
+
+  @include desktop {
+    max-width: 17%;
+
+    &:nth-child(2) {
+      margin-right: 232px;
     }
   }
 }
@@ -61,7 +97,7 @@
 
 .navigation__toggle {
   position: relative;
-  background-color: $background-color-secondary;
+  background-color: inherit;
 }
 
 
@@ -70,6 +106,11 @@
 
   @include tablet {
     display: flex;
+    gap: 35px;
+  }
+
+  @include desktop {
+    gap: 46px;
   }
 }
 
