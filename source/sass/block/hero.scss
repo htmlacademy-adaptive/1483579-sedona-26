@@ -2,6 +2,10 @@
   position: relative;
   padding: 35px 19px 24px;
 
+  &--video {
+    padding: 17px 19px 39px;
+  }
+
   @include tablet {
     padding: 52px 0 55px;
 
@@ -9,10 +13,18 @@
       max-width: 520px;
       margin: 0 auto;
     }
+
+    &--video {
+      padding: 39px 0 89px;
+    }
   }
 
   @include desktop {
-    padding: 61px 0px 46px;
+    padding: 61px 0 46px;
+
+    &--video {
+      padding: 42px 19px 86px;
+    }
   }
 }
 
@@ -41,6 +53,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  &--index {
+    margin: 0 0 34px;
+  }
 
   @include tablet {
     font-size: 21px;
@@ -80,11 +96,11 @@
   padding: 38px 18px 32px;
 
   @include tablet {
-    padding: 60px 166px 40px;
+    padding: 59px 164px 36px;
   }
 
   @include desktop {
-    padding: 60px 166px 44px;
+    padding: 62px 163px 41px;
   }
 }
 
@@ -100,7 +116,7 @@
 
 .hero__text--intersted {
   @include desktop {
-    width: 434px;
+    width: 436px;
     margin: 0 auto;
   }
 }
@@ -133,12 +149,14 @@
 }
 
 .hero--catalog {
+  padding: 35px 19px 36px;
+
   @include tablet {
-    padding: 66px 155px 66px;
+    padding: 66px 155px 80px;
   }
 
   @include desktop {
-    padding: 100px 370px 66px;
+    padding: 100px 370px 87px;
   }
 }
 
@@ -148,7 +166,7 @@
     margin-bottom: 20px;
   }
 
-  @include desktop{
+  @include desktop {
     font-size: 30px;
     margin-bottom: 30px;
   }
@@ -159,5 +177,11 @@
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 24px;
+  }
+}
+
+.hero__title--catalog {
+  @include tablet {
+    margin-bottom: 33px;
   }
 }

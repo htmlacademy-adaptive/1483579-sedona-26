@@ -1,5 +1,9 @@
 .general-footer {
-  padding: 31px 82px;
+  padding: 28px 77px; //31px 82px
+
+  &--index {
+    padding: 33px 77px;
+  }
 
   @include tablet {
     display: flex;

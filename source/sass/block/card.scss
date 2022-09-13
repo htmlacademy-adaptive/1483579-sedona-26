@@ -44,6 +44,7 @@
 .card__like {
   border: none;
   background-color: transparent;
+  padding: 0;
 
   @include tablet {
     display: block;
@@ -61,10 +62,13 @@
   display: flex;
   gap: 14px;
   align-items: center;
+  margin-top: 11px;
 
   @include tablet {
     min-width: 60px;
     gap: 8px;
+    align-items: start;
+    margin: 7px -4px 0 0;
   }
 }
 
@@ -85,7 +89,7 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 16px;
     background-color: $inputs-background-color;
   }
 

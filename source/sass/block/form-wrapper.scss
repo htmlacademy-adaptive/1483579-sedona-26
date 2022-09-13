@@ -1,22 +1,16 @@
 .form-wrapper {
-  padding: 20px 20px 38px;
+  padding: 21px 20px 38px;
   margin: 0;
 
   @include tablet {
     padding: 0;
     padding-bottom: 57px;
   }
-
-  /*@include desktop {
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }*/
 }
 
 .form-wrapper--textarea {
   border-bottom: none;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 
   @include tablet {
     margin-bottom: 34px;
@@ -24,14 +18,24 @@
 
   @include desktop {
     padding: 0 94px 48px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
 .form-wrapper--position {
   padding-bottom: 24px;
 
+  @include tablet {
+    padding-bottom: 25px;
+  }
+
   @include desktop {
     padding-bottom: 28px;
+  }
+}
+
+.form-wrapper--position-contact {
+  @include desktop {
+    padding-left: 20px;
   }
 }

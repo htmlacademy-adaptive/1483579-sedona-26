@@ -3,7 +3,7 @@
 }
 
 .description-list__item {
-  padding: 10px 0 0 47px;
+  padding: 10px 0 0 44px;
   position: relative;
   margin-bottom: 22px;
 
@@ -11,6 +11,12 @@
     box-sizing: border-box;
     width: 33%;
     padding: 156px 36px 37px;
+  }
+
+  @include desktop {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 156px 48px 37px;
   }
 }
 
@@ -32,7 +38,7 @@
 }
 
 .description-list__text {
-  margin: -1px;
+  margin: -1px 0;
 
   @include tablet {
     text-align: center;
@@ -43,11 +49,11 @@
 
     @include tablet {
       width: 192px;
-    };
+    }
 
     @include desktop {
-      margin-left: 69px;
-    };
+      min-width: 310px;
+    }
   }
 }
 

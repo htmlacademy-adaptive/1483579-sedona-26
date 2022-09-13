@@ -18,7 +18,7 @@
 
   @include desktop {
     max-width: 212px;
-    margin: 0 28px 58px;
+    margin: 0 51px 58px;
   }
 
   &::after {
@@ -70,16 +70,17 @@
   }
 
   @include desktop {
-    padding: 44px 44px 32px;
+    padding: 41px 61px 32px;
   }
 }
 
 .content__text--underlined {
   border-bottom: 1px solid #d6d6d6;
-  padding: 0 0 25px 0;
+  padding: 0 18px 25px;
 
   @include tablet {
     border-bottom: none;
+    padding: 0 0 25px;
   }
 }
 
@@ -94,12 +95,12 @@
   padding: 24px 19px 24px;
 
   @include tablet {
-    padding: 40px 34px 63px;
+    padding: 40px 51px 40px;
   }
 }
 
 .content--index-paddings {
-  padding: 63px 20px 40px;
+  padding: 64px 20px 38px;
 
   @include tablet {
     padding: 39px 20px 40px;
