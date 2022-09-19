@@ -11,6 +11,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
+import terser from 'gulp-terser';
 
 // Styles
 
@@ -33,6 +34,13 @@ export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
+}
+
+//JS
+export const script = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'));
 }
 
 // Images
@@ -122,6 +130,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/*.js', gulp.series(script));
   gulp.watch('source/*.html', gulp.series(html, reload));
   //gulp.watch('source/*.html').on('change', browser.reload);
 
@@ -135,6 +144,7 @@ export const build = gulp.series(
     styles,
     html,
     svg,
+    script,
     sprite,
     createWebp
   ),);
@@ -148,6 +158,7 @@ export default gulp.series(
     html,
     svg,
     sprite,
+    script,
     createWebp
   ),gulp.series(
     server,

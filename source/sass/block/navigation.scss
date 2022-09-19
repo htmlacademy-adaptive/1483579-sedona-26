@@ -107,6 +107,14 @@
   }
 }
 
+.nojs .navigation__list--closed {
+  display: block;
+}
+
+.navigation__list--opened {
+  display: block;
+}
+
 .navigation__link--current {
   @include tablet {
     color: $text-current-page-color;

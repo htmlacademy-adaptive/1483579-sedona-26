@@ -31,6 +31,8 @@
   }
 }
 
+
+
 .toggle__open {
   position: absolute;
   top: 0;
@@ -50,4 +52,8 @@
   top: 50%;
   transform: translateY(-50%);
   margin-right: 24px;
+}
+
+.nojs .toggle {
+  display: none;
 }

@@ -30,3 +30,7 @@
     z-index: 0;
   }
 }
+
+.nojs .general-header__nav {
+  position: static;
+}
