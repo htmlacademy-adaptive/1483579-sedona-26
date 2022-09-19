@@ -12,12 +12,10 @@ console.dir('buttonToggle');
 const openMenu = function(){
   navSelector.classList.toggle('navigation__list--closed');
   navSelector.classList.toggle('navigation__list--open');
-  console.log('1');
 }
 const closeMenu = function(){
   navSelector.classList.toggle('navigation__list--closed');
   navSelector.classList.toggle('navigation__list--open');
-  console.log('2');
 }
 
 buttonToggle.addEventListener('click', openMenu);
