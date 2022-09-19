@@ -13,4 +13,4 @@ const openMenu = function(){
   navSelector.classList.toggle('navigation__list--open');
 }
 
-buttonToggle.addEventListener('click', openMenu)
+buttonToggle.addEventListener('click', openMenu);
